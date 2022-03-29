@@ -157,10 +157,16 @@ main {
   border: 1px solid black;
   border-radius: 10px;
   background-color: white;
+  transition: 0.2s;
 }
 
-.button:hover {
-  background-color: hsla(100, 0%, 50%, 0.4);
+.button:hover:not(.survey__checked) {
+  background-color: hsla(100, 0%, 50%, 0.3);
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.95);
 }
 
 .button.next {
@@ -226,6 +232,10 @@ h1 {
 
 .survey__option {
   flex: 0 0 48%;
+}
+
+.survey__checked {
+  background-color: hsla(100, 0%, 50%, 0.6);
 }
 
 
