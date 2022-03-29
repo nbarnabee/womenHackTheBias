@@ -227,3 +227,18 @@ h1 {
 .survey__option {
   flex: 0 0 48%;
 }
+
+
+
+/* ---------- Media queries ------ */
+
+@media all and (min-width: 380px) {
+  main {
+    position: relative;
+    width: 380px;
+    height: 811px;
+    padding-inline: 20px;
+    border: 1px solid black;
+    box-shadow: 0 2px 5px rgba(19, 18, 18, 0.2);
+  }
+}
