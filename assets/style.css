@@ -145,6 +145,10 @@ main {
   margin-block-end: var(--s-1);
 }
 
+.top-space {
+  margin-top: 40%;
+}
+
 
 /* --------- Buttons and button-like links --------- */
 
@@ -212,10 +216,6 @@ h1 {
 
 
 /* -------- Survey cards ---------- */
-
-.survey-card {
-  margin-top: 40%;
-}
 
 .survey-container {
   display: flex;
