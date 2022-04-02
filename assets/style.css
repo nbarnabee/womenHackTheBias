@@ -365,7 +365,7 @@ h2 {
 .survey-container {
   display: flex;
   flex-direction: column;
-  gap: var(--s0);
+  gap: 1rem;
 }
 
 .survey-container__wrap {
@@ -386,11 +386,11 @@ h2 {
 /* --------- Signup form --------- */
 
 .form {
-  margin-top: var(--s3);
+  margin-top: 1.75rem;
   display: flex;
   flex-flow: wrap;
-  row-gap: var(--s2);
-  column-gap: var(--s0);
+  gap: 1rem;
+
 }
 
 .form>input {
@@ -473,7 +473,7 @@ textarea:focus-visible {
 
 .coc-agree {
   width: 60%;
-  margin-top: var(--s2);
+  margin-top: 1.75rem;
 }
 
 
