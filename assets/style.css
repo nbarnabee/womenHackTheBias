@@ -271,30 +271,18 @@ main {
 .next {
   width: 25%;
   position: absolute;
-  height: 50px;
   top: 650px;
   right: 22px;
-  padding-block: 2%;
   display: flex;
   flex-direction: column;
-  background: url("./right-arrow.svg") center/contain no-repeat;
-  background-size: 25px;
 }
 
-
-/* .button.next {
-  width: 25%;
-  position: absolute;
-  top: 650px;
-  right: 22px;
+.next>.button {
+  background: url("./right-arrow.svg") center/contain no-repeat;
+  background-size: 25px;
   padding-block: 2%;
-} */
-
-/* .button-next img {
   height: 50px;
-  margin: auto;
-} */
-
+}
 
 
 /* ------  Images --------- */
