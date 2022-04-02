@@ -65,7 +65,7 @@ main.dashboard>* {
   border-radius: 50%;
   position: relative;
   bottom: 30px;
-  background-color: var(--background-color);
+  background-color: #EF7760;
   /* border: 1px solid var(--text-color); */
   box-shadow: 0 2px 2px hsla(33, 50%, 70%, 0.8);
 }
