@@ -218,6 +218,7 @@ html {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+  text-align: center;
 }
 
 @font-face {
@@ -246,7 +247,7 @@ main {
 }
 
 .top-space {
-  margin-top: 40%;
+  margin-top: 5rem;
 }
 
 /* ------  Images --------- */
@@ -263,11 +264,6 @@ main {
 
 /* ---------  Text ------------ */
 
-
-.info-text {
-  text-align: center;
-}
-
 b {
   font-weight: bold;
 }
@@ -276,19 +272,19 @@ h1 {
   font-size: 1.75rem;
   font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
   font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
 /* --------- Buttons and button-like links --------- */
 
 .button {
-  display: inline-block;
   text-align: center;
-  vertical-align: middle;
   margin-inline: auto;
   width: 100%;
   height: 3rem;
@@ -318,33 +314,16 @@ h2 {
 }
 
 .next {
-  margin-block: 1.75rem;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  margin-inline: auto;
+  margin-bottom: 1.75rem;
+  transition: 0.3s;
 }
 
-/* .next:hover {
-  fill: var(--whitish);
+
+.next:hover {
+  font-weight: bold;
+  transition: 0.3s
 }
-
-.next>small {
-  text-indent: 13px;
-}
-
-.next>.button {
-  background: var(--whitish) url("./right-arrow.svg") center/contain no-repeat;
-  background-size: 25px;
-  padding-block: 2%;
-  height: 50px;
-}
-
-.next>.button.finish {
-  background-image: none;
-  line-height: 45px;
-} */
-
 
 /* -------- Login & Survey cards ---------- */
 
@@ -368,15 +347,13 @@ h2 {
   gap: 1rem;
 }
 
-.survey-container__wrap {
-  flex-flow: row wrap;
-  gap: 1rem;
+.survey-container-grid {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 1rem;
   justify-content: space-between;
 }
 
-.survey__option {
-  flex: 0 0 48%;
-}
 
 .survey__checked {
   background-color: rgb(40, 66, 91, 1);
@@ -484,7 +461,6 @@ textarea:focus-visible {
   main {
     position: relative;
     width: 380px;
-    height: 811px;
     padding-inline: 20px;
     border: 1px solid black;
     box-shadow: 0 2px 5px rgba(19, 18, 18, 0.2);
