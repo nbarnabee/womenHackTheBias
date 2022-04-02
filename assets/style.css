@@ -256,11 +256,11 @@ main {
   border: 1px solid black;
   border-radius: 10px;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .button:hover:not(.survey__checked) {
   background-color: hsla(100, 0%, 50%, 0.3);
-  cursor: pointer;
 }
 
 .button:active {
@@ -289,7 +289,7 @@ main {
 }
 
 .next>.button.finish {
-  background: none;
+  background-image: none;
   line-height: 45px;
 }
 
@@ -407,6 +407,38 @@ textarea:focus-visible {
   outline: none;
 }
 
+.coc-link {
+  background: none;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.coc-link:hover {
+  border-width: 2px;
+}
+
+.coc-modal {
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  top: -30px;
+  width: 90vw;
+  height: 100vh;
+  padding-top: 20px;
+  display: none;
+
+}
+
+.coc-modal>p {
+  text-align: left;
+}
+
+.coc-agree {
+  width: 60%;
+  margin-top: var(--s2);
+}
 
 
 /* ---------- Media queries ------ */
@@ -419,5 +451,9 @@ textarea:focus-visible {
     padding-inline: 20px;
     border: 1px solid black;
     box-shadow: 0 2px 5px rgba(19, 18, 18, 0.2);
+  }
+
+  .coc-modal {
+    width: 38ch;
   }
 }
