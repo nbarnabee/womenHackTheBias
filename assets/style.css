@@ -215,9 +215,14 @@ hsl(209, 39%, 26%)
 }
 
 html {
-  font-family: "Open Sans", Geneva, Verdana, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+@font-face {
+  font-family: "glorify";
+  src: url("./fonts/Glorifydemo-BW3J3.otf")
 }
 
 
@@ -269,10 +274,13 @@ b {
 
 h1 {
   font-size: 1.75rem;
+  font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 /* --------- Buttons and button-like links --------- */
@@ -288,6 +296,7 @@ h2 {
   transition: 0.2s;
   cursor: pointer;
   background-color: var(--whitish);
+  font-weight: bold;
   box-shadow: 0px 4px 10px rgba(98, 62, 29, 0.15);
 }
 
