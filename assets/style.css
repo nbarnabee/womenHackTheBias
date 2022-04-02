@@ -350,7 +350,7 @@ small {
 
 /* --------- Signup form --------- */
 
-.sign-up {
+.form {
   margin-top: var(--s3);
   display: flex;
   flex-flow: wrap;
@@ -358,7 +358,7 @@ small {
   column-gap: var(--s0);
 }
 
-.sign-up>input {
+.form>input {
   border: 0;
   border-bottom: 1.5px solid black;
   font-family: inherit;
@@ -367,11 +367,11 @@ small {
   flex: 0 0 45%;
 }
 
-.sign-up>.input-long {
+.form>.input-long {
   flex-basis: 95%;
 }
 
-.sign-up>input:focus-visible {
+.form>input:focus-visible {
   outline: 0;
 }
 
