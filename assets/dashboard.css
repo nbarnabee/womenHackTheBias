@@ -54,8 +54,10 @@ main.dashboard>* {
   background-color: var(--background-color);
 }
 
+.top-nav img,
 .bottom-nav img {
   height: 30px;
+  cursor: pointer;
 }
 
 .post-button {
