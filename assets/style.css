@@ -234,6 +234,10 @@ main {
   margin-inline: auto;
 }
 
+main>*:last-child {
+  margin-bottom: 1.5rem;
+}
+
 .stack>*+* {
   margin-block-start: 2.25rem;
 }
@@ -291,6 +295,7 @@ h2 {
 /* --------- Buttons and button-like links --------- */
 
 .button {
+  display: inline-block;
   text-align: center;
   margin-inline: auto;
   width: 100%;
@@ -325,7 +330,6 @@ h2 {
   margin-bottom: 1.75rem;
   transition: 0.3s;
 }
-
 
 .next:hover {
   font-weight: bold;
