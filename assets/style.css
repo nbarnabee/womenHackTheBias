@@ -310,16 +310,14 @@ h2 {
 }
 
 .next {
+  margin-block: 1.75rem;
   width: 25%;
-  /* position: absolute;
-  top: 650px;
-  right: 22px; */
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
-  gap: var(--s-3);
 }
 
-.next:hover {
+/* .next:hover {
   fill: var(--whitish);
 }
 
@@ -337,7 +335,7 @@ h2 {
 .next>.button.finish {
   background-image: none;
   line-height: 45px;
-}
+} */
 
 
 /* -------- Login & Survey cards ---------- */
