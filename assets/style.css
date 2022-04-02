@@ -362,6 +362,26 @@ h1 {
   outline: 0;
 }
 
+.avatar-wrapper {
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  margin-inline: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1.5px solid black;
+  transition: all .3s ease;
+}
+
+.avatar-wrapper:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.avatar-wrapper:hover .profile-pic {
+  opacity: .5;
+}
+
 
 
 /* ---------- Media queries ------ */
