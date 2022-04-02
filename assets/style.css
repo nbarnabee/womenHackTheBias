@@ -198,6 +198,16 @@ li {
 
 /* --------- Root/Base styles --------  */
 
+/* 
+Background color:
+rgb(235, 221, 204)
+hsl(33, 44%, 86%)
+
+Text color:  
+rgb(40, 66, 91)
+hsl(209, 39%, 26%)
+*/
+
 :root {
   --background-color: #EBDDCC;
   --text-color: #28425B;

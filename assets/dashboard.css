@@ -58,6 +58,16 @@ main.dashboard>* {
   height: 30px;
 }
 
+.post-button {
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 30px;
+  background-color: var(--background-color);
+  /* border: 1px solid var(--text-color); */
+  box-shadow: 0 2px 2px hsla(33, 50%, 70%, 0.8);
+}
+
 /* ---- Layout: Groups ------  */
 
 .group-carousel {
@@ -93,11 +103,15 @@ main.dashboard>* {
 
 /* ---------- Media queries ------ */
 
-main.dashboard,
-.top-nav,
-.bottom-nav {
-  width: 380px;
-  margin-inline: auto;
-  border: 1px solid var(--text-color);
-  box-shadow: 0;
+
+@media all and (min-width: 380px) {
+
+  main.dashboard,
+  .top-nav,
+  .bottom-nav {
+    width: 380px;
+    margin-inline: auto;
+    border: 1px solid var(--text-color);
+    box-shadow: 0;
+  }
 }
