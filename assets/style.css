@@ -133,6 +133,9 @@ table {
   border-spacing: 0;
 }
 
+textarea {
+  resize: none;
+}
 
 *,
 *::before,
@@ -275,6 +278,7 @@ main {
   right: 22px;
   display: flex;
   flex-direction: column;
+  gap: var(--s-2);
 }
 
 .next>.button {
@@ -309,6 +313,10 @@ b {
 
 h1 {
   font-size: var(--s1);
+}
+
+small {
+  font-size: var(--s-1);
 }
 
 
