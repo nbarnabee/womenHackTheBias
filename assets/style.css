@@ -199,8 +199,8 @@ li {
 /* --------- Root/Base styles --------  */
 
 :root {
-  --main-color: black;
-  --accent-color: blue;
+  --background-color: #EBDDCC;
+  --text-color: #28425B;
 
   --ratio: 1.5;
   --s-5: calc(var(--s-4) / var(--ratio));
@@ -217,7 +217,9 @@ li {
 }
 
 html {
-  font-family: "Open Sans", Geneva, Verdana, sans-serif
+  font-family: "Open Sans", Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 
@@ -253,14 +255,16 @@ main {
   margin-inline: auto;
   padding-block: 3%;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid var(--text-color);
   border-radius: 10px;
   transition: 0.2s;
   cursor: pointer;
+  background-color: white;
 }
 
 .button:hover:not(.survey__checked) {
-  background-color: hsla(100, 0%, 50%, 0.3);
+  background-color: rgb(40, 66, 91, 0.7);
+  color: white;
 }
 
 .button:active {
@@ -277,12 +281,16 @@ main {
   gap: var(--s-3);
 }
 
+.next:hover {
+  fill: white;
+}
+
 .next>small {
   text-indent: 13px;
 }
 
 .next>.button {
-  background: url("./right-arrow.svg") center/contain no-repeat;
+  background: white url("./right-arrow.svg") center/contain no-repeat;
   background-size: 25px;
   padding-block: 2%;
   height: 50px;
@@ -345,9 +353,9 @@ small {
 }
 
 .survey__checked {
-  background-color: hsla(100, 0%, 50%, 0.6);
+  background-color: rgb(40, 66, 91, 1);
+  color: white;
 }
-
 
 /* --------- Signup form --------- */
 
@@ -361,8 +369,9 @@ small {
 
 .form>input {
   border: 0;
-  border-bottom: 1.5px solid black;
+  border-bottom: 1.5px solid var(--text-color);
   font-family: inherit;
+  background-color: inherit;
   font-weight: 600;
   min-width: 0;
   flex: 0 0 45%;
@@ -383,7 +392,7 @@ small {
   margin-inline: auto;
   border-radius: 50%;
   overflow: hidden;
-  border: 1.5px solid black;
+  border: 1.5px solid var(--text-color);
   transition: all .3s ease;
 }
 
@@ -399,7 +408,7 @@ small {
 
 textarea {
   resize: none;
-  border: 1.5px solid black;
+  border: 1.5px solid var(--text-color);
   border-radius: 5px;
   padding: 5px;
 }
@@ -412,7 +421,7 @@ textarea:focus-visible {
   background: none;
   padding: 0;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--text-color);
   cursor: pointer;
 }
 
@@ -421,7 +430,7 @@ textarea:focus-visible {
 }
 
 .coc-modal {
-  background-color: white;
+  background-color: var(--background-color);
   z-index: 1;
   position: fixed;
   top: -30px;
@@ -440,6 +449,7 @@ textarea:focus-visible {
   width: 60%;
   margin-top: var(--s2);
 }
+
 
 
 /* ---------- Media queries ------ */

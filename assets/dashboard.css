@@ -1,0 +1,60 @@
+/* --- Specific text styles -- */
+
+.dashboard h1 {
+  font-size: var(--s1);
+}
+
+.dashboard h2 {
+  font-size: var(--s1);
+  font-weight: bold;
+}
+
+
+/* ---- Layout: Main ------  */
+
+main.dashboard {
+  background-color: white;
+  margin-top: 120px;
+  padding-block: 40px;
+  width: 100%;
+}
+
+main.dashboard>* {
+  width: 90%;
+  margin-inline: auto;
+}
+
+
+/* ---- Layout: Nav ------  */
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding-inline: 15px;
+  padding-block: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/* ---- Layout: Groups ------  */
+
+
+
+
+/* ---- Layout: Topics ------  */
