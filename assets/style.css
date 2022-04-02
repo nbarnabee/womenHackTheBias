@@ -298,6 +298,7 @@ main {
 .img-full {
   border: 1px solid black;
   height: 450px;
+  line-height: 450px;
   text-align: center;
   margin-top: var(--s2);
 }
