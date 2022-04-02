@@ -250,6 +250,10 @@ main {
   margin-top: 5rem;
 }
 
+.central {
+  margin-top: 15rem;
+}
+
 /* ------  Images --------- */
 
 .img-full {
@@ -260,7 +264,10 @@ main {
   margin-top: 2rem;
 }
 
-
+.logo {
+  margin-inline: auto;
+  margin-top: 3rem;
+}
 
 /* ---------  Text ------------ */
 
