@@ -133,10 +133,6 @@ table {
   border-spacing: 0;
 }
 
-textarea {
-  resize: none;
-}
-
 *,
 *::before,
 *::after {
@@ -278,7 +274,11 @@ main {
   right: 22px;
   display: flex;
   flex-direction: column;
-  gap: var(--s-2);
+  gap: var(--s-3);
+}
+
+.next>small {
+  text-indent: 13px;
 }
 
 .next>.button {
@@ -288,6 +288,10 @@ main {
   height: 50px;
 }
 
+.next>.button.finish {
+  background: none;
+  line-height: 45px;
+}
 
 /* ------  Images --------- */
 
@@ -389,6 +393,18 @@ small {
 
 .avatar-wrapper:hover .profile-pic {
   opacity: .5;
+}
+
+
+textarea {
+  resize: none;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+textarea:focus-visible {
+  outline: none;
 }
 
 
