@@ -256,6 +256,36 @@ main {
   margin-top: 40%;
 }
 
+/* ------  Images --------- */
+
+.img-full {
+  border: 1px solid black;
+  height: 450px;
+  line-height: 450px;
+  text-align: center;
+  margin-top: var(--s2);
+}
+
+
+
+/* ---------  Text ------------ */
+
+
+.info-text {
+  text-align: center;
+}
+
+b {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: var(--s1);
+}
+
+small {
+  font-size: var(--s-1);
+}
 
 /* --------- Buttons and button-like links --------- */
 
@@ -311,39 +341,22 @@ main {
   line-height: 45px;
 }
 
-/* ------  Images --------- */
 
-.img-full {
-  border: 1px solid black;
-  height: 450px;
-  line-height: 450px;
-  text-align: center;
-  margin-top: var(--s2);
-}
+/* -------- Login & Survey cards ---------- */
 
 
-
-/* ---------  Text ------------ */
-
-
-.info-text {
-  text-align: center;
-}
-
-b {
+.signin-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   font-weight: bold;
 }
 
-h1 {
-  font-size: var(--s1);
+.start-survey {
+  background-color: var(--text-color);
+  color: white;
 }
-
-small {
-  font-size: var(--s-1);
-}
-
-
-/* -------- Survey cards ---------- */
 
 .survey-container {
   display: flex;
