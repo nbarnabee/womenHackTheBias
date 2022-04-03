@@ -50,7 +50,7 @@ main.dashboard>* {
   left: 0;
   right: 0;
   z-index: 1;
-  padding-block: 10px;
+  padding-top: 10px;
   display: flex;
   justify-content: space-evenly;
   background-color: var(--background-color);
@@ -58,12 +58,16 @@ main.dashboard>* {
 
 .top-nav img,
 .bottom-nav img {
-  height: 30px;
   cursor: pointer;
+  height: 25px;
+}
+
+.bottom-nav img {
+  padding-top: 5px;
 }
 
 .post-button {
-  padding: 10px;
+  padding: 12px;
   border-radius: 50%;
   position: relative;
   bottom: 30px;
