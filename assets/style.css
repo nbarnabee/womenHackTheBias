@@ -378,7 +378,9 @@ h2 {
 }
 
 .next a:hover,
-.signin-signup .login:hover {
+.signin-signup .login:hover,
+.next a:active,
+.signin-signup .login:active {
   font-weight: bold;
   transform: scale(1.1);
   transition: 0.3s
