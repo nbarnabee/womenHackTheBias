@@ -446,6 +446,10 @@ h2 {
   background-size: 90%;
 }
 
+.pre-dash.high-bg-img {
+  background-position: center 35%;
+}
+
 .pre-dash>h1 {
   padding-bottom: 20rem;
 }
@@ -490,7 +494,7 @@ h2 {
   margin-top: 1.75rem;
   display: flex;
   flex-flow: wrap;
-  gap: 1rem;
+  gap: 2rem;
 
 }
 
