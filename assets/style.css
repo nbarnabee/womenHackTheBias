@@ -298,6 +298,15 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+.txt-light {
+  font-weight: 300;
+}
+
+.txt-xxl {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
 /* --------- Buttons and button-like links --------- */
 
 .button {
@@ -329,7 +338,7 @@ h2 {
 
 .button.color-invert:hover {
   background-color: var(--whitish);
-  color: var(--whitish);
+  color: var(--text-color);
 }
 
 .button.two-line {
@@ -346,12 +355,18 @@ h2 {
 }
 
 .next {
-  margin-inline: auto;
   margin-bottom: 1.75rem;
   transition: 0.3s;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.next a {
+  display: inline;
+  width: 30%;
+  margin-inline: auto;
+  transition: 0.3s;
 }
 
 .next a:hover {
@@ -360,13 +375,31 @@ h2 {
   transition: 0.3s
 }
 
-.next a {
-  transition: 0.3s;
-}
-
 .next>small {
   font-size: 14px;
 }
+
+
+/* ----------- Index --------------- */
+
+
+.index {
+  margin-top: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index>img {
+  height: 14rem;
+}
+
+/*-----------  Slides ----------------- */
+
+
+
+
+
 
 /* -------- Login & Survey cards ---------- */
 
