@@ -434,6 +434,17 @@ h2 {
 
 
 
+.pre-dash {
+  background: url("./illustrations/onboarding3.svg") center no-repeat;
+  background-size: 90%;
+}
+
+.pre-dash>h1 {
+  padding-bottom: 20rem;
+
+}
+
+
 /* -------- Login & Survey cards ---------- */
 
 
@@ -457,7 +468,6 @@ h2 {
   grid-gap: 1rem;
   justify-content: space-between;
 }
-
 
 .survey__checked {
   background-color: rgb(40, 66, 91, 1);
