@@ -196,7 +196,7 @@ li {
 }
 
 
-/* --------- Root/Base styles --------  */
+/* --------- Root/Base font styles and colors --------  */
 
 /* 
 Background color:
@@ -224,6 +224,11 @@ html {
 @font-face {
   font-family: "glorify";
   src: url("./fonts/Glorifydemo-BW3J3.otf")
+}
+
+.button.color-invert {
+  background-color: var(--text-color);
+  color: var(--whitish);
 }
 
 
@@ -312,6 +317,11 @@ h2 {
   box-shadow: 0px 4px 10px rgba(98, 62, 29, 0.15);
 }
 
+.button.color-invert {
+  background-color: var(--text-color);
+  color: var(--whitish);
+}
+
 .button.two-line {
   line-height: 1.1rem;
   padding-top: 0.4rem;
@@ -357,11 +367,6 @@ h2 {
   align-items: center;
   gap: 1rem;
   font-weight: bold;
-}
-
-.start-survey {
-  background-color: var(--text-color);
-  color: var(--whitish);
 }
 
 .survey-container {
