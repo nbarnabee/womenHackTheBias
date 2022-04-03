@@ -62,7 +62,7 @@ main.dashboard>* {
   height: 1.5rem;
 }
 
-.bottom-nav img {
+.bottom-nav img:not(img[alt="New post"]) {
   padding-top: 5px;
 }
 
@@ -79,6 +79,8 @@ main.dashboard>* {
 
 .group-carousel {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   overflow: hidden;
   margin-top: 10px;
@@ -92,8 +94,14 @@ main.dashboard>* {
 
 .group-image {
   border: 1px solid var(--text-color);
-  border-radius: 10%;
+  border-radius: 50%;
   height: 75px;
+  width: 75px;
+  margin-inline: auto;
+}
+
+.group>.notification {
+  height:
 }
 
 
@@ -111,7 +119,7 @@ main.dashboard>* {
 /* ---------- Media queries ------ */
 
 
-@media all and (min-width: 380px) {
+@media all and (min-width: 440px) {
 
   main.dashboard,
   .top-nav,

@@ -210,8 +210,16 @@ hsl(209, 39%, 26%)
 
 :root {
   --background-color: #EBDDCC;
-  --text-color: #28425B;
   --whitish: #FBFBFB;
+  --text-color: #28425B;
+  --orange: #EF7760;
+  --salmon: #F59D8C;
+  --gold: #F0C88B;
+  --lgt-green: #B0D97D;
+  --lighter-green: #D7E7B6;
+  --lgt-blue: #BACBF6;
+  --purple: #D1BAE8;
+  --gray: #B5BDC5;
 }
 
 html {
@@ -588,7 +596,7 @@ textarea:focus-visible {
 
 /* ---------- Media queries ------ */
 
-@media all and (min-width: 380px) {
+@media all and (min-width: 440px) {
   main {
     position: relative;
     width: 380px;
