@@ -307,7 +307,7 @@ h2 {
   font-weight: bold;
 }
 
-/* --------- Buttons and button-like links --------- */
+/* --------- Buttons and links --------- */
 
 .button {
   display: inline-block;
@@ -369,10 +369,15 @@ h2 {
   transition: 0.3s;
 }
 
-.next a:hover {
+.next a:hover,
+.signin-signup .login:hover {
   font-weight: bold;
   transform: scale(1.1);
   transition: 0.3s
+}
+
+.signin-signup .login {
+  transition: 0.3s;
 }
 
 .next>small {
@@ -433,6 +438,8 @@ h2 {
 }
 
 
+/* -------- Pre-dash and login components ---------- */
+
 
 .pre-dash {
   background: url("./illustrations/onboarding3.svg") center no-repeat;
@@ -441,12 +448,11 @@ h2 {
 
 .pre-dash>h1 {
   padding-bottom: 20rem;
-
 }
 
-
-/* -------- Login & Survey cards ---------- */
-
+.pre-dash>form {
+  margin-bottom: 2.25rem;
+}
 
 .signin-signup {
   display: flex;
@@ -455,6 +461,10 @@ h2 {
   gap: 1rem;
   font-weight: bold;
 }
+
+
+/* -------- Survey cards ---------- */
+
 
 .survey-container {
   display: flex;
