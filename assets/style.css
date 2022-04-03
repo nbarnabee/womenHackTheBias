@@ -397,7 +397,40 @@ h2 {
 /*-----------  Slides ----------------- */
 
 
+.slide {
+  margin-top: 4.75rem;
+}
 
+.slide>p {
+  margin-top: 18.25rem;
+}
+
+.slide-button-container {
+  margin: 2.5rem auto;
+  display: flex;
+  width: 60%;
+  gap: 1rem;
+  width: 60%;
+  justify-content: center;
+}
+
+.slide-button {
+  border-radius: 50%;
+  border: 1px solid var(--text-color);
+  background-color: var(--whitish);
+  height: 1rem;
+  width: 1rem;
+}
+
+
+.slide1 {
+  background: url("./illustrations/onboarding1.svg") center no-repeat;
+  background-size: 75%;
+}
+
+.slide1 .slide-button:nth-of-type(1) {
+  background-color: var(--text-color);
+}
 
 
 
