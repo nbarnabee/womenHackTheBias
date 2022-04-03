@@ -59,7 +59,7 @@ main.dashboard>* {
 .top-nav img,
 .bottom-nav img {
   cursor: pointer;
-  height: 25px;
+  height: 1.5rem;
 }
 
 .bottom-nav img {

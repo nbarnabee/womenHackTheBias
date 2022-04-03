@@ -312,9 +312,14 @@ h2 {
   transition: 0.2s;
   cursor: pointer;
   background-color: var(--whitish);
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
   box-shadow: 0px 4px 10px rgba(98, 62, 29, 0.15);
+}
+
+.button:hover:not(.survey__checked) {
+  background-color: var(--text-color);
+  color: var(--whitish);
 }
 
 .button.color-invert {
@@ -322,18 +327,18 @@ h2 {
   color: var(--whitish);
 }
 
+.button.color-invert:hover {
+  background-color: var(--whitish);
+  color: var(--whitish);
+}
+
 .button.two-line {
   line-height: 1.1rem;
-  padding-top: 0.4rem;
+  padding-top: 0.35rem;
 }
 
 .btn-small {
-  width: 40%;
-}
-
-.button:hover:not(.survey__checked) {
-  background-color: rgb(40, 66, 91, 0.7);
-  color: var(--whitish);
+  width: 45%;
 }
 
 .button:active {
@@ -351,7 +356,12 @@ h2 {
 
 .next a:hover {
   font-weight: bold;
+  transform: scale(1.1);
   transition: 0.3s
+}
+
+.next a {
+  transition: 0.3s;
 }
 
 .next>small {
