@@ -18,24 +18,46 @@
 
   <header>
     <nav class="top-nav">
-      <img src="./assets/icons/settings_icon.jpg" class="nav-settings" alt="Settings">
-      <h1>Hi, Liva!</h1>
-      <img src="#" class="nav-profile" alt="Profile">
+      <img src="./assets/icons/settings_icon.svg" class="nav-settings" alt="Settings">
+      <h1>New Post</h1>
+      <img src="./assets/icons/profile_icon.svg" class="nav-profile" alt="Profile">
     </nav>
   </header>
 
-  <main class="stack dashboard">
+
+  <main class="dashboard">
+    <form class="form form-dash">
+      <textarea name="title" placeholder="Post Title" row="4"></textarea>
+      <select name="topic">
+        <option value="" selected hidden disabled>Topic</option>
+        <option value="time">Time Management</option>
+        <option value="dating">Dating & Relationships</option>
+        <option value="careerChange">Career Transitions</option>
+        <option value="selfLove">Self-love</option>
+      </select>
+      <input type="text" name="tags" placeholder="Add tags">
+      <textarea name="bodyText" placeholder="What's on your mind?" row="7"></textarea>
+      <select name="privacy">
+        <option value="" selected hidden disabled>Privacy</option>
+        <option value="everyone">Open to Everyone</option>
+        <option value="groups">Open to My Groups</option>
+        <option value="friends">Open to Friends</option>
+      </select>
+      <button type="button" class="button">Post</button>
+      <button type="reset" class="text-button">Cancel</button>
+    </form>
 
   </main>
 
   <footer>
     <nav aria-label="bottom-nav-bar">
       <ul class="bottom-nav">
-        <li><a href=""><img src="./assets/icons/home_icon.jpg" alt="Home"></a></li>
-        <li><a href="#"><img src="./assets/icons/search_icon.jpg" alt="Search"></a></li>
-        <li class="post-button"><a href="#"><img src="./assets/icons/plus_icon.jpg" alt="New post"></a></li>
-        <li><a href="#"><img src="./assets/icons/mail_icon.jpg" alt="Message"></a></li>
-        <li><a href="#"><img src="./assets/icons/bell_icon.jpg" alt="Notifications"></a></li>
+        <li><a href=""><img src="./assets/icons/home_icon.svg" alt="Home"></a></li>
+        <li><a href="#"><img src="./assets/icons/search_icon.svg" alt="Search"></a></li>
+        <li class="post-button"><a href="./newPost.html"><img src="./assets/icons/plus_icon.svg" alt="New post"></a>
+        </li>
+        <li><a href="#"><img src="./assets/icons/message_icon.svg" alt="Message"></a></li>
+        <li><a href="#"><img src="./assets/icons/bell_icon.svg" alt="Notifications"></a></li>
   </footer>
 
 

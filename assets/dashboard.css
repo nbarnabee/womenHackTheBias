@@ -1,14 +1,5 @@
 /* --- Specific text styles -- */
 
-.dashboard h1 {
-  font-size: var(--s1);
-}
-
-.dashboard h2 {
-  font-size: var(--s1);
-  font-weight: bold;
-}
-
 
 /* ---- Layout: Main ------  */
 
@@ -16,9 +7,6 @@ main.dashboard {
   background-color: var(--white);
   margin-top: 7rem;
   padding-top: 40px;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-  height: 100vh;
 }
 
 main.dashboard>* {
@@ -72,6 +60,7 @@ main.dashboard>* {
   bottom: 30px;
   background-color: var(--orange);
   box-shadow: 0 2px 2px hsla(33, 50%, 70%, 0.8);
+  transition: 0.3s;
 }
 
 /* ---- Layout: Groups ------  */
@@ -119,7 +108,7 @@ main.dashboard>* {
 @media all and (min-width: 440px) {
 
   body {
-    width: 100vw;
+    width: 100%;
     background-color: var(--dark-blue);
   }
 
