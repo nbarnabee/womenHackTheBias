@@ -497,6 +497,10 @@ h2 {
 
 }
 
+.form.textbox {
+  justify-content: center;
+}
+
 .form>input {
   border: 0;
   border-bottom: 1.5px solid var(--dark-green);
@@ -570,6 +574,17 @@ textarea:focus-visible {
   margin-bottom: 2rem;
 }
 
+.coc-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--orange);
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
 
 
 /* ---------- Media queries ------ */
@@ -597,13 +612,8 @@ textarea:focus-visible {
   /* ---------  Hover effects ----------  */
 
   .button:hover:not(.survey__checked) {
-    background-color: var(--dark-green);
-    color: var(--white);
-  }
-
-  .button.color-invert:hover {
-    background-color: var(--white);
-    color: var(--dark-green);
+    transform: scale(1.1);
+    transition: 0.3s;
   }
 
   .coc-link:hover {
@@ -613,10 +623,6 @@ textarea:focus-visible {
   .avatar-wrapper:hover {
     transform: scale(1.05);
     cursor: pointer;
-  }
-
-  .avatar-wrapper:hover .profile-pic {
-    opacity: .5;
   }
 
 }
