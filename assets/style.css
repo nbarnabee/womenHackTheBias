@@ -379,6 +379,11 @@ b {
   width: 45%;
 }
 
+.btn-narrow {
+  padding-inline: 1em;
+  padding-block: 0.5em;
+}
+
 .button:active {
   transform: scale(0.95);
   transition: 0.2s;
@@ -421,7 +426,6 @@ b {
   width: 1rem;
 }
 
-
 .slide1 {
   background: url("./illustrations/onboarding1_BG.png") center no-repeat;
   background-size: 110%;
@@ -453,7 +457,7 @@ b {
 }
 
 
-/* -------- Survey cards ---------- */
+/* -------- Onboarding survey ---------- */
 
 
 .survey-container {
@@ -475,13 +479,39 @@ b {
   border-color: var(--dark-blue);
 }
 
-/* --------- Signup form --------- */
+
+/* --------- Input elements --------- */
+
+
+input {
+  border: 1px solid var(--dark-blue);
+  background-color: var(--white);
+  border-radius: 24px;
+  padding: 0.5rem;
+  text-indent: 5px;
+}
+
+input::placeholder {
+  color: rgba(40, 66, 91, 0.7);
+}
+
+textarea {
+  resize: none;
+  border: 1.5px solid var(--dark-blue);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+textarea:focus-visible {
+  outline: none;
+}
 
 .form {
   margin-top: 1.75rem;
   display: flex;
   flex-flow: wrap;
-  gap: 2rem;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
 
 .form.textbox {
@@ -489,10 +519,6 @@ b {
 }
 
 .form>input {
-  border: 0;
-  border-bottom: 1.5px solid var(--dark-blue);
-  font-family: inherit;
-  background-color: inherit;
   font-weight: 600;
   min-width: 0;
   flex: 0 0 45%;
@@ -513,22 +539,14 @@ b {
   margin-inline: auto;
   border-radius: 50%;
   overflow: hidden;
-  border: 1.5px solid var(--dark-blue);
+  border: 1px solid var(--dark-blue);
   background-color: var(--white);
   transition: all .3s ease;
 }
 
 
-textarea {
-  resize: none;
-  border: 1.5px solid var(--dark-blue);
-  border-radius: 5px;
-  padding: 5px;
-}
 
-textarea:focus-visible {
-  outline: none;
-}
+/* ------  Code of conduct ----------  */
 
 .coc-link {
   background: none;
