@@ -247,9 +247,12 @@ html {
 
 /* -------- General spacing ------------ */
 
-main {
-  width: 90%;
+/* main {
   margin-inline: auto;
+} */
+
+main>* {
+  margin-inline: 5%;
 }
 
 main:not(.dashboard)>*:last-child {
@@ -413,8 +416,9 @@ b {
 
 
 .slide1 {
-  background: url("./illustrations/onboarding1.svg") center no-repeat;
-  background-size: 75%;
+  background: url("./illustrations/onboarding1_BG.png") center no-repeat;
+  background-size: 150%;
+  overflow: visible;
 }
 
 .slide1 .slide-button:nth-of-type(1) {
@@ -426,7 +430,7 @@ b {
 
 
 .pre-dash {
-  background: url("./illustrations/onboarding3.svg") center no-repeat;
+  background: url("./illustrations/onboarding3_noBG.png") center no-repeat;
   background-size: 90%;
 }
 
@@ -568,14 +572,9 @@ textarea:focus-visible {
 
 @media all and (min-width: 440px) {
 
-
-  main {
-    position: relative;
-    width: 380px;
-    padding-inline: 20px;
-    border: 1px solid black;
-    box-shadow: 0 2px 5px rgba(19, 18, 18, 0.2);
-    padding-bottom: 5rem;
+  body {
+    width: 50vw;
+    margin-inline: auto;
   }
 
   .size-warning {

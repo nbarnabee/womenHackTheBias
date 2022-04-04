@@ -121,16 +121,9 @@ main.dashboard>* {
 
 @media all and (min-width: 440px) {
 
-  main.dashboard,
-  .top-nav,
-  .bottom-nav {
-    width: 380px;
+  main {
+    width: 500px;
     margin-inline: auto;
-  }
-
-  main.dashboard {
-    border: none;
-    box-shadow: none;
   }
 
   .top-nav {
