@@ -459,9 +459,10 @@ b {
   justify-content: space-between;
 }
 
-.survey__checked {
+.button.survey__checked {
   background-color: var(--dark-green);
   color: var(--white);
+  border-color: var(--dark-green);
 }
 
 /* --------- Signup form --------- */
