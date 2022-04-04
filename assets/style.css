@@ -580,6 +580,7 @@ textarea:focus-visible {
 
   body {
     width: 50vw;
+    height: 100vw;
     margin-inline: auto;
   }
 
@@ -589,7 +590,11 @@ textarea:focus-visible {
   }
 
   .coc-modal {
-    width: 38ch;
+    width: 60ch;
+  }
+
+  .central {
+    height: 100vw;
   }
 
 }
