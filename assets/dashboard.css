@@ -92,7 +92,6 @@ main.dashboard>* {
 
 
 
-
 /* ---- Layout: Topics ------  */
 
 .my-topics {
@@ -102,6 +101,29 @@ main.dashboard>* {
   margin-top: 20px;
 }
 
+.pencil-absolute {
+  background: url("./icons/pencil_icon.svg") no-repeat;
+  position: absolute;
+  top: -10px;
+  right: 100px;
+  height: 1.5rem;
+}
+
+.topic-text {
+  color: var(--dark-blue);
+}
+
+.topic1 {
+  background-color: var(--lgt-blue);
+}
+
+.topic2 {
+  background-color: var(--gold);
+}
+
+.topic3 {
+  background-color: var(--lighter-green);
+}
 
 
 /* ---------- Media queries ------ */
