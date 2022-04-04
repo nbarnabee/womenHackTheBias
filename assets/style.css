@@ -234,6 +234,12 @@ html {
   src: url("./fonts/Glorifydemo-BW3J3.otf")
 }
 
+.size-warning {
+  display: none;
+  background-color: var(--white);
+  width: 100%;
+}
+
 /* -------- General spacing ------------ */
 
 main {
@@ -328,17 +334,7 @@ h2 {
   transition: 0.3s;
 }
 
-.button:hover:not(.survey__checked) {
-  background-color: var(--dark-green);
-  color: var(--white);
-}
-
-.button.color-invert {
-  background-color: var(--dark-green);
-  color: var(--white);
-}
-
-.button.color-invert:hover {
+.button.survey {
   background-color: var(--white);
   color: var(--dark-green);
 }
@@ -531,15 +527,6 @@ h2 {
   transition: all .3s ease;
 }
 
-.avatar-wrapper:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.avatar-wrapper:hover .profile-pic {
-  opacity: .5;
-}
-
 
 textarea {
   resize: none;
@@ -558,10 +545,6 @@ textarea:focus-visible {
   border: none;
   border-bottom: 1px solid var(--dark-green);
   cursor: pointer;
-}
-
-.coc-link:hover {
-  border-width: 2px;
 }
 
 .coc-modal {
@@ -601,11 +584,39 @@ textarea:focus-visible {
     padding-bottom: 5rem;
   }
 
-  .intro-warning {
+  .size-warning {
     display: block;
+    text-align: left;
   }
 
   .coc-modal {
     width: 38ch;
   }
+
+
+  /* ---------  Hover effects ----------  */
+
+  .button:hover:not(.survey__checked) {
+    background-color: var(--dark-green);
+    color: var(--white);
+  }
+
+  .button.color-invert:hover {
+    background-color: var(--white);
+    color: var(--dark-green);
+  }
+
+  .coc-link:hover {
+    border-width: 2px;
+  }
+
+  .avatar-wrapper:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .avatar-wrapper:hover .profile-pic {
+    opacity: .5;
+  }
+
 }
