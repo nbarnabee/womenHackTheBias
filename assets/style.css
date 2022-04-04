@@ -495,7 +495,8 @@ b {
 
 
 input,
-select {
+select,
+textarea {
   border: 1px solid var(--dark-blue);
   background-color: var(--white);
   border-radius: 24px;
@@ -505,10 +506,8 @@ select {
 
 textarea {
   resize: none;
-  border: 1px solid var(--dark-blue);
   border-radius: 20px;
   padding: 5px;
-  text-indent: 5px;
   width: 100%;
 }
 
