@@ -504,7 +504,7 @@ textarea {
   border: 1px solid var(--dark-blue);
   background-color: var(--white);
   border-radius: 24px;
-  padding: 1rem;
+  padding: 0.5rem;
   text-indent: 5px;
 }
 
