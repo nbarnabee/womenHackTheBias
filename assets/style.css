@@ -211,7 +211,7 @@ hsl(209, 39%, 26%)
 :root {
   --almond: #EBDDCC;
   --white: #FBFBFB;
-  --dark-green: #28425B;
+  --dark-blue: #28425B;
   --orange: #EF7760;
   --salmon: #F59D8C;
   --gold: #F0C88B;
@@ -225,7 +225,7 @@ hsl(209, 39%, 26%)
 html {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   background-color: var(--almond);
-  color: var(--dark-green);
+  color: var(--dark-blue);
   text-align: center;
 }
 
@@ -300,7 +300,7 @@ main:not(.dashboard)>*:last-child {
 /* ------  Images --------- */
 
 .img-full {
-  border: 1px solid var(--dark-green);
+  border: 1px solid var(--dark-blue);
   height: 450px;
   line-height: 450px;
   text-align: center;
@@ -357,7 +357,7 @@ b {
   border: 1px solid var(--white);
   border-radius: 24px;
   cursor: pointer;
-  background-color: var(--dark-green);
+  background-color: var(--dark-blue);
   color: var(--white);
   font-size: 1rem;
   font-weight: bold;
@@ -367,7 +367,7 @@ b {
 
 .button.survey {
   background-color: var(--white);
-  color: var(--dark-green);
+  color: var(--dark-blue);
 }
 
 .button.two-line {
@@ -415,7 +415,7 @@ b {
 
 .slide-button {
   border-radius: 50%;
-  border: 1px solid var(--dark-green);
+  border: 1px solid var(--dark-blue);
   background-color: var(--white);
   height: 1rem;
   width: 1rem;
@@ -428,7 +428,7 @@ b {
 }
 
 .slide1 .slide-button:nth-of-type(1) {
-  background-color: var(--dark-green);
+  background-color: var(--dark-blue);
 }
 
 
@@ -470,9 +470,9 @@ b {
 }
 
 .button.survey__checked {
-  background-color: var(--dark-green);
+  background-color: var(--dark-blue);
   color: var(--white);
-  border-color: var(--dark-green);
+  border-color: var(--dark-blue);
 }
 
 /* --------- Signup form --------- */
@@ -490,7 +490,7 @@ b {
 
 .form>input {
   border: 0;
-  border-bottom: 1.5px solid var(--dark-green);
+  border-bottom: 1.5px solid var(--dark-blue);
   font-family: inherit;
   background-color: inherit;
   font-weight: 600;
@@ -513,7 +513,7 @@ b {
   margin-inline: auto;
   border-radius: 50%;
   overflow: hidden;
-  border: 1.5px solid var(--dark-green);
+  border: 1.5px solid var(--dark-blue);
   background-color: var(--white);
   transition: all .3s ease;
 }
@@ -521,7 +521,7 @@ b {
 
 textarea {
   resize: none;
-  border: 1.5px solid var(--dark-green);
+  border: 1.5px solid var(--dark-blue);
   border-radius: 5px;
   padding: 5px;
 }
@@ -534,7 +534,7 @@ textarea:focus-visible {
   background: none;
   padding: 0;
   border: none;
-  border-bottom: 1px solid var(--dark-green);
+  border-bottom: 1px solid var(--dark-blue);
   cursor: pointer;
 }
 
