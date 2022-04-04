@@ -246,11 +246,12 @@ html {
   background: var(--white);
 }
 
+.borderless {
+  border: 0;
+}
+
 /* -------- General spacing ------------ */
 
-/* main {
-  margin-inline: auto;
-} */
 
 main>* {
   margin-inline: 5%;
@@ -381,11 +382,6 @@ b {
 
 .btn-small {
   width: 45%;
-}
-
-.btn-narrow {
-  padding-inline: 1em;
-  padding-block: 0.5em;
 }
 
 .button:active,
