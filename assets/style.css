@@ -537,6 +537,7 @@ select>option {
 }
 
 .form-dash {
+  padding-bottom: 8rem;
   flex-direction: column;
   gap: 1.5rem;
 }

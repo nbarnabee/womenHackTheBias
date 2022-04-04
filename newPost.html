@@ -11,7 +11,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/style.css">
   <link rel="stylesheet" href="./assets/dashboard.css">
-  <title>Dashboard</title>
+  <title>New Post</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
 
   <main class="dashboard">
     <form class="form form-dash">
-      <textarea name="title" placeholder="Post Title" row="4"></textarea>
+      <textarea name="title" placeholder="Post Title" rows="4"></textarea>
       <select name="topic">
         <option value="" selected hidden disabled>Topic</option>
         <option value="time">Time Management</option>
@@ -36,15 +36,17 @@
         <option value="selfLove">Self-love</option>
       </select>
       <input type="text" name="tags" placeholder="Add tags">
-      <textarea name="bodyText" placeholder="What's on your mind?" row="7"></textarea>
+      <textarea name="bodyText" placeholder="What's on your mind?" rows="12"></textarea>
       <select name="privacy">
         <option value="" selected hidden disabled>Privacy</option>
         <option value="everyone">Open to Everyone</option>
         <option value="groups">Open to My Groups</option>
         <option value="friends">Open to Friends</option>
       </select>
-      <button type="button" class="button">Post</button>
-      <button type="reset" class="text-button">Cancel</button>
+      <div class="link-group">
+        <button type="button" class="button btn-small">Post</button>
+        <button type="reset" class="text-button">Cancel</button>
+      </div>
     </form>
 
   </main>
@@ -52,7 +54,7 @@
   <footer>
     <nav aria-label="bottom-nav-bar">
       <ul class="bottom-nav">
-        <li><a href=""><img src="./assets/icons/home_icon.svg" alt="Home"></a></li>
+        <li><a href="./dashboard.html"><img src="./assets/icons/home_icon.svg" alt="Home"></a></li>
         <li><a href="#"><img src="./assets/icons/search_icon.svg" alt="Search"></a></li>
         <li class="post-button"><a href="./newPost.html"><img src="./assets/icons/plus_icon.svg" alt="New post"></a>
         </li>
