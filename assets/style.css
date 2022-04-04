@@ -209,9 +209,9 @@ hsl(209, 39%, 26%)
 */
 
 :root {
-  --background-color: #EBDDCC;
-  --whitish: #FBFBFB;
-  --text-color: #28425B;
+  --almond: #EBDDCC;
+  --white: #FBFBFB;
+  --dark-green: #28425B;
   --orange: #EF7760;
   --salmon: #F59D8C;
   --gold: #F0C88B;
@@ -224,8 +224,8 @@ hsl(209, 39%, 26%)
 
 html {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--almond);
+  color: var(--dark-green);
   text-align: center;
 }
 
@@ -233,12 +233,6 @@ html {
   font-family: "glorify";
   src: url("./fonts/Glorifydemo-BW3J3.otf")
 }
-
-.button.color-invert {
-  background-color: var(--text-color);
-  color: var(--whitish);
-}
-
 
 /* -------- General spacing ------------ */
 
@@ -274,7 +268,7 @@ main:not(.dashboard)>*:last-child {
 /* ------  Images --------- */
 
 .img-full {
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--dark-green);
   height: 450px;
   line-height: 450px;
   text-align: center;
@@ -324,10 +318,10 @@ h2 {
   width: 100%;
   height: 3rem;
   line-height: 3rem;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--white);
   border-radius: 24px;
   cursor: pointer;
-  background-color: var(--whitish);
+  background-color: var(--white);
   font-size: 1rem;
   font-weight: bold;
   box-shadow: 0px 4px 10px rgba(98, 62, 29, 0.15);
@@ -335,18 +329,18 @@ h2 {
 }
 
 .button:hover:not(.survey__checked) {
-  background-color: var(--text-color);
-  color: var(--whitish);
+  background-color: var(--dark-green);
+  color: var(--white);
 }
 
 .button.color-invert {
-  background-color: var(--text-color);
-  color: var(--whitish);
+  background-color: var(--dark-green);
+  color: var(--white);
 }
 
 .button.color-invert:hover {
-  background-color: var(--whitish);
-  color: var(--text-color);
+  background-color: var(--white);
+  color: var(--dark-green);
 }
 
 .button.two-line {
@@ -430,8 +424,8 @@ h2 {
 
 .slide-button {
   border-radius: 50%;
-  border: 1px solid var(--text-color);
-  background-color: var(--whitish);
+  border: 1px solid var(--dark-green);
+  background-color: var(--white);
   height: 1rem;
   width: 1rem;
 }
@@ -443,7 +437,7 @@ h2 {
 }
 
 .slide1 .slide-button:nth-of-type(1) {
-  background-color: var(--text-color);
+  background-color: var(--dark-green);
 }
 
 
@@ -493,8 +487,8 @@ h2 {
 }
 
 .survey__checked {
-  background-color: rgb(40, 66, 91, 1);
-  color: var(--whitish);
+  background-color: var(--dark-green);
+  color: var(--white);
 }
 
 /* --------- Signup form --------- */
@@ -509,7 +503,7 @@ h2 {
 
 .form>input {
   border: 0;
-  border-bottom: 1.5px solid var(--text-color);
+  border-bottom: 1.5px solid var(--dark-green);
   font-family: inherit;
   background-color: inherit;
   font-weight: 600;
@@ -532,8 +526,8 @@ h2 {
   margin-inline: auto;
   border-radius: 50%;
   overflow: hidden;
-  border: 1.5px solid var(--text-color);
-  background-color: var(--whitish);
+  border: 1.5px solid var(--dark-green);
+  background-color: var(--white);
   transition: all .3s ease;
 }
 
@@ -549,7 +543,7 @@ h2 {
 
 textarea {
   resize: none;
-  border: 1.5px solid var(--text-color);
+  border: 1.5px solid var(--dark-green);
   border-radius: 5px;
   padding: 5px;
 }
@@ -562,7 +556,7 @@ textarea:focus-visible {
   background: none;
   padding: 0;
   border: none;
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--dark-green);
   cursor: pointer;
 }
 
@@ -571,7 +565,7 @@ textarea:focus-visible {
 }
 
 .coc-modal {
-  background-color: var(--whitish);
+  background-color: var(--white);
   z-index: 1;
   position: relative;
   top: -630px;
@@ -607,6 +601,9 @@ textarea:focus-visible {
     padding-bottom: 5rem;
   }
 
+  .intro-warning {
+    display: block;
+  }
 
   .coc-modal {
     width: 38ch;
