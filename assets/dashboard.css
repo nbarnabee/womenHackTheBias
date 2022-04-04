@@ -158,71 +158,42 @@ main.dashboard>section:last-child {
   color: var(--dark-blue);
 }
 
-.topic1 {
+
+/* ---------  Card colors  --------- */
+
+
+.blue {
   background-color: var(--lgt-blue);
 }
 
-.topic2 {
+.gold {
   background-color: var(--gold);
 }
 
-.topic3 {
-  background-color: var(--lighter-green);
-}
-
-
-/* ---------  Individual cards  --------- */
-
-
-
-.card1 {
-  background-color: var(--pink);
-}
-
-.card2 {
-  background-color: var(--lgt-blue);
-}
-
-.card3 {
-  background-color: var(--salmon);
-}
-
-
-.card4 {
+.green {
   background-color: var(--lgt-green);
 }
 
-.card5 {
-  background-color: var(--salmon);
-}
-
-.card6 {
-  background-color: var(--purple);
-}
-
-.card7 {
-  background-color: var(--lgt-blue);
-}
-
-.card8 {
-  background-color: var(--orange);
-}
-
-.card9 {
-  background-color: var(--gold);
-}
-
-.card10 {
-  background-color: var(--pink);
-}
-
-.card11 {
+.green2 {
   background-color: var(--lighter-green);
 }
 
-.card12 {
-  background-color: var(--lgt-blue);
+.orange {
+  background-color: var(--orange);
 }
+
+.pink {
+  background-color: var(--pink);
+}
+
+.purple {
+  background-color: var(--purple);
+}
+
+.salmon {
+  background-color: var(--salmon);
+}
+
 
 /* ---------- Media queries ------ */
 
