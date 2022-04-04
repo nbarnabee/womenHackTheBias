@@ -491,27 +491,36 @@ input {
   text-indent: 5px;
 }
 
-input::placeholder {
-  color: rgba(40, 66, 91, 0.7);
-}
-
 textarea {
   resize: none;
   border: 1.5px solid var(--dark-blue);
   border-radius: 20px;
   padding: 5px;
+  text-indent: 5px;
+  width: 100%;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: rgba(40, 66, 91, 0.7);
+}
+
+input:focus-visible,
 textarea:focus-visible {
-  outline: none;
+  outline: 1.5px solid var(--dark-blue);
 }
 
 .form {
   margin-top: 1.75rem;
   display: flex;
-  flex-flow: wrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 1rem;
+}
+
+.form-dash {
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .form.textbox {
@@ -526,10 +535,6 @@ textarea:focus-visible {
 
 .form>.input-long {
   flex-basis: 95%;
-}
-
-.form>input:focus-visible {
-  outline: 0;
 }
 
 .avatar-wrapper {
