@@ -121,11 +121,6 @@ main.dashboard>* {
 
 @media all and (min-width: 440px) {
 
-  main {
-    width: 500px;
-    margin-inline: auto;
-  }
-
   .top-nav {
     border: 1px solid var(--dark-green);
     border-bottom: none;
