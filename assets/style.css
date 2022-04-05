@@ -321,6 +321,10 @@ main:not(.dashboard)>*:last-child {
 
 /* ---------  Text ------------ */
 
+.glorify {
+  font-family: "glorify", "Lora", Georgia, 'Times New Roman', Times, serif
+}
+
 h1 {
   font-size: 1.75rem;
   font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
