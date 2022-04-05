@@ -350,6 +350,10 @@ b {
   font-weight: bold;
 }
 
+.left {
+  text-align: left;
+}
+
 .txt-light {
   font-weight: 300;
 }
