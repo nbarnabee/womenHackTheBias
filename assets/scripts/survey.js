@@ -74,6 +74,7 @@ function updateSurvey() {
   }
   pTxt.innerHTML = `Choose your top 3.<br>You can edit them later.`;
   buttonSwap.innerHTML = `<a href="./onboardSurvey4.html" class="button btn-small">Continue</a>`;
+  pTxt.classList.remove("left");
   buttonSet = document.querySelectorAll('.survey');
   createListeners();
 }

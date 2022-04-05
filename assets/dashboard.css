@@ -169,12 +169,12 @@ main.dashboard>section:last-child {
 }
 
 .pencil-absolute {
-  background: url("./icons/pencil_icon.svg") no-repeat;
+  background: url("./icons/pencil_icon.svg") center no-repeat;
   position: absolute;
   top: 15%;
-  right: -30%;
-  height: 1.5rem;
-  width: 1.5rem;
+  right: -25%;
+  height: 1.15rem;
+  width: 1.17rem;
 }
 
 .topic-text {
