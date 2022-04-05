@@ -413,6 +413,7 @@ b {
   margin-top: 3.75rem;
   padding-block: 2rem;
   margin-inline: 0;
+  height: 484px;
 }
 
 .slide>* {
@@ -421,6 +422,10 @@ b {
 
 .slide>p {
   margin-top: 19rem;
+}
+
+.slide1>p {
+  margin-top: 16.5rem;
 }
 
 .slide-button-container {
