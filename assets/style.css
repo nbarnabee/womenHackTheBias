@@ -440,12 +440,21 @@ b {
 }
 
 .slide1 {
-  background: url("./illustrations/onboarding1_BG.png") no-repeat;
+  background: url("./illustrations/onboarding1_BG.png") center no-repeat;
   background-size: 130%;
-  background-position: center;
 }
 
-.slide-button:nth-of-type(1) {
+.slide2 {
+  background: url("./illustrations/onboarding2_BG.png") center no-repeat;
+  background-size: 130%;
+}
+
+.slide3 {
+  background: url("./illustrations/onboarding3_BG.png") center no-repeat;
+  background-size: 130%;
+}
+
+.slide-button.blue {
   background-color: var(--dark-blue);
 }
 
