@@ -48,6 +48,15 @@ main.dashboard>section:last-child {
   text-align: left;
 }
 
+.notification {
+  background-color: var(--orange);
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
 
 /* ---- Layout: Navigation ------  */
 
@@ -96,21 +105,7 @@ main.dashboard>section:last-child {
   transition: 0.3s;
 }
 
-/* ---- Cards and group categories ------  */
-
-.card {
-  position: relative;
-  border-radius: 15px;
-  vertical-align: bottom;
-  text-align: left;
-  padding: 5px;
-  max-width: 20ch;
-  display: flex;
-  align-items: flex-end;
-  font-weight: 600;
-  flex: 1 1 30%;
-  box-shadow: 0px 4px 10px rgba(98, 62, 29, 0.15);
-}
+/* ---- Groups ------  */
 
 .standard-group,
 .interest-group,
@@ -118,32 +113,47 @@ main.dashboard>section:last-child {
 .tag-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
-  overflow: hidden;
-  padding-block: 10px;
 }
 
-.tag-group {
+.standard-group {
+  align-items: flex-start;
+}
+
+.tag-group,
+.interest-group {
   gap: 0.75rem;
+  justify-content: center;
   align-content: space-around;
+}
+
+/* -------- Cards and group-specific card styles ------ */
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 5px;
+  max-width: 25ch;
+  font-weight: 600;
+  flex: 1 1 30%;
+  box-shadow: 0px 4px 10px rgba(98, 62, 29, 0.15);
 }
 
 .standard-group>.card {
   width: 120px;
   height: 120px;
+  align-items: flex-end;
+  text-align: left;
 }
 
-.notification {
-  background-color: var(--orange);
-  border-radius: 50%;
-  height: 12px;
-  width: 12px;
-  position: absolute;
-  top: -2px;
-  right: -2px;
+.interest-group>.card {
+  justify-content: center;
+  flex-grow: 0;
 }
+
+
 
 /* ---- Layout: Topics ------  */
 
@@ -161,8 +171,7 @@ main.dashboard>section:last-child {
 .pencil-absolute {
   background: url("./icons/pencil_icon.svg") no-repeat;
   position: absolute;
-  top: -10px;
-  right: 100px;
+  right: 26%;
   height: 1.5rem;
 }
 

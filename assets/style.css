@@ -511,6 +511,12 @@ input {
   text-indent: 4px;
 }
 
+select,
+option {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
 textarea {
   resize: none;
   border-radius: 20px;
