@@ -693,7 +693,7 @@ for details
 
 
 .slideIn-container {
-  animation: slideIn 4s linear forwards;
+  animation: slideIn 3s linear forwards;
 }
 
 
@@ -752,5 +752,6 @@ for details
   .central {
     height: 100vw;
   }
+
 
 }
