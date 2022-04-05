@@ -521,9 +521,10 @@ textarea {
 
 input::placeholder,
 textarea::placeholder,
-select::placeholder {
+.default-option {
   color: rgba(40, 66, 91, 0.7);
 }
+
 
 input:focus-visible,
 textarea:focus-visible,
