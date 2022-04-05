@@ -286,6 +286,7 @@ main:not(.dashboard)>*:last-child {
 
 .relative {
   position: relative;
+  display: inline-block;
 }
 
 
@@ -422,10 +423,11 @@ b {
 
 .slide>p {
   margin-top: 19rem;
+  text-align: left;
 }
 
 .slide1>p {
-  margin-top: 16.5rem;
+  margin-top: 15.5rem;
 }
 
 .slide-button-container {

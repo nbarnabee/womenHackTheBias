@@ -9,7 +9,7 @@ main.dashboard {
 }
 
 main.dashboard>*:not(.button) {
-  width: 90%;
+  max-width: 90%;
   margin-inline: auto;
 }
 
@@ -171,8 +171,10 @@ main.dashboard>section:last-child {
 .pencil-absolute {
   background: url("./icons/pencil_icon.svg") no-repeat;
   position: absolute;
-  right: 26%;
+  top: 1%;
+  right: -50%;
   height: 1.5rem;
+  width: 1.5rem;
 }
 
 .topic-text {
