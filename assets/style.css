@@ -624,10 +624,17 @@ select>option {
   padding-inline: 40px;
   padding-top: 40px;
   display: none;
+  width: 50ch;
 }
 
-.coc-modal>p {
+.coc-modal>p,
+.coc-modal li {
   text-align: left;
+  list-style: circle;
+}
+
+.coc-modal li:not(li:first-child) {
+  padding-top: 0.5rem;
 }
 
 .coc-agree {
