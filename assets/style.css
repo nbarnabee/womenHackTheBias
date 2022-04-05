@@ -443,8 +443,8 @@ b {
 
 .slide1 {
   background: url("./illustrations/onboarding1_BG.png") no-repeat;
-  background-size: 130%;
-  background-position: top center;
+  background-size: 120%;
+  background-position: center top -30%;
 }
 
 .slide1 .slide-button:nth-of-type(1) {
@@ -644,8 +644,8 @@ for details
     transform: translateX(1400px);
   }
 
-  95% {
-    transform: translateX(-10px);
+  94% {
+    transform: translateX(-15px);
   }
 
   100% {
@@ -693,7 +693,10 @@ for details
 
 
 .slideIn-container {
-  animation: slideIn 3s linear forwards;
+  transform: translateX(1400px);
+  animation: slideIn ease-out forwards;
+  animation-delay: 2.5s;
+  animation-duration: 1.5s;
 }
 
 
