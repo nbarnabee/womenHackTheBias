@@ -177,6 +177,11 @@ main.dashboard>section:last-child {
   width: 1.17rem;
 }
 
+.pencil-absolute.profile {
+  top: 20%;
+  right: -55%;
+}
+
 .topic-text {
   color: var(--dark-blue);
 }
@@ -204,40 +209,10 @@ main.dashboard>section:last-child {
   height: 2rem;
 }
 
-/* ---------  Card colors  --------- */
+
+/* ------  Layout: Profile -----  */
 
 
-.blue {
-  background-color: var(--lgt-blue);
-}
-
-.gold {
-  background-color: var(--gold);
-}
-
-.green {
-  background-color: var(--lgt-green);
-}
-
-.green2 {
-  background-color: var(--lighter-green);
-}
-
-.orange {
-  background-color: var(--orange);
-}
-
-.pink {
-  background-color: var(--pink);
-}
-
-.purple {
-  background-color: var(--purple);
-}
-
-.salmon {
-  background-color: var(--salmon);
-}
 
 
 /* ---------- Media queries ------ */

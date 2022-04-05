@@ -603,7 +603,6 @@ select>option {
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid var(--dark-blue);
-  background-color: var(--white);
   transition: all .3s ease;
 }
 
@@ -841,4 +840,42 @@ for details
   }
 
 
+}
+
+/* ----- Colors ---------- */
+
+.blue {
+  background-color: var(--lgt-blue);
+}
+
+.gold {
+  background-color: var(--gold);
+}
+
+.green {
+  background-color: var(--lgt-green);
+}
+
+.green2 {
+  background-color: var(--lighter-green);
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.pink {
+  background-color: var(--pink);
+}
+
+.purple {
+  background-color: var(--purple);
+}
+
+.salmon {
+  background-color: var(--salmon);
+}
+
+.white {
+  background-color: var(--white);
 }
