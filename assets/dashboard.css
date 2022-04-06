@@ -107,17 +107,24 @@ main.dashboard>section:last-child {
 
 /* ---- Groups ------  */
 
-.standard-group,
+.sliding-group {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 5px;
+  scrollbar-width: none;
+}
+
+.sliding-group::-webkit-scrollbar {
+  display: none;
+}
+
 .interest-group,
 .post-group,
 .tag-group {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-}
-
-.standard-group {
-  align-items: flex-start;
 }
 
 .tag-group,
@@ -141,9 +148,10 @@ main.dashboard>section:last-child {
   box-shadow: 0px 4px 10px rgba(98, 62, 29, 0.15);
 }
 
-.standard-group>.card {
+.sliding-group>.card {
   width: 120px;
   height: 120px;
+  flex: 1 0 35%;
   align-items: flex-end;
   text-align: left;
 }
@@ -226,6 +234,14 @@ main.dashboard>section:last-child {
   main.dashboard {
     width: 90%;
     margin-inline: auto;
+  }
+
+  .sliding-group {
+    scrollbar-width: thin;
+  }
+
+  .sliding-group::-webkit-scrollbar {
+    display: visible;
   }
 
 }
