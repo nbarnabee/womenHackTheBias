@@ -75,12 +75,12 @@ function loadSecondSlide() {
   if (slideCheck === "102vw")
   return;
   else if (slideCheck === "207vw") {
-    slideGroup.forEach(e => e.style.right = "102vw");
+    slideGroup.forEach(e => e.style.right = "min(720px, 102vw)");
     button3.classList.remove("blue");
     button2.classList.add("blue");
   }
   else {
-    slideGroup.forEach(e => e.style.right = "102vw");
+    slideGroup.forEach(e => e.style.right = "min(720px, 102vw)");
       button1.classList.remove("blue");
       button2.classList.add("blue");
   };
@@ -91,12 +91,12 @@ function loadThirdSlide() {
   if (slideCheck === "207vw")
   return;
   else if (slideCheck === "0vw") {
-    slideGroup.forEach(e => e.style.right = "207vw");
+    slideGroup.forEach(e => e.style.right = "min(1380px, 207vw)");
       button1.classList.remove("blue");
       button3.classList.add("blue");
   }
   else {
-    slideGroup.forEach(e => e.style.right = "207vw");
+    slideGroup.forEach(e => e.style.right = "min(1380px, 207vw)");
       button2.classList.remove("blue");
       button3.classList.add("blue");
   };
