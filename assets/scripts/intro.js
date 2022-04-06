@@ -28,11 +28,9 @@ window.addEventListener("DOMContentLoaded", () => {
         }, 2500);
       });
       setTimeout(() => {
-        underlay.classList.add("active")
         overlay.style.top = "-1400px";
-        setTimeout(() => {
-          overlay.style.opacity="0";
-        }, 200);
+        overlay.style.opacity="0";
+        underlay.classList.add("active")
       }, 2600);
     }, 500)
 
