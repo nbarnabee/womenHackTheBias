@@ -425,7 +425,13 @@ b {
   gap: 50px;
   overflow: auto;
   transition: 2s;
+  scrollbar-width: none;
 }
+
+.slide-container::-webkit-scrollbar {
+  display: none;
+}
+
 
 .slide {
   margin-top: 3.75rem;
@@ -485,12 +491,6 @@ b {
 .slide-button.blue {
   background-color: var(--dark-blue);
 }
-
-/* 
-.getdown {
-  margin-top: 36rem;
-} */
-
 
 /* -------- Pre-dash and login components ---------- */
 
@@ -782,6 +782,26 @@ for details
     height: 100vw;
   }
 
+  .slide-container {
+    gap: 10rem;
+  }
+
+  .slide {
+    height: 684px;
+  }
+
+  .slide1 {
+    background-size: 100%;
+  }
+
+  .slide1>p {
+    margin-top: 21.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .slide3 {
+    margin-right: 4rem;
+  }
 
 }
 
