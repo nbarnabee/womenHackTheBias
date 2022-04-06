@@ -43,72 +43,72 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-button1.addEventListener("click", loadFirstSlide);
-button2.addEventListener("click", loadSecondSlide);
-button3.addEventListener("click", loadThirdSlide);
+// button1.addEventListener("click", loadFirstSlide);
+// button2.addEventListener("click", loadSecondSlide);
+// button3.addEventListener("click", loadThirdSlide);
 
-function loadFirstSlide() {
-  if (slide1.classList.contains("slide-center"))
-  return;
-  else if (slide2.classList.contains("slide-left")) {
-    slide3.classList.replace("slide-center", "slide-right");
-    slide2.classList.replace("slide-left", "slide-center");
-    button2.classList.add("blue");
-    button3.classList.remove("blue");
-    setTimeout(() => {
-      slide2.classList.replace("slide-center", "slide-right");
-      slide1.classList.replace("slide-left", "slide-center");
-      button1.classList.add("blue");
-      button2.classList.remove("blue");
-    }, 500);
-  }
-  else {
-    slide2.classList.replace("slide-center", "slide-right");
-    slide1.classList.replace("slide-left", "slide-center");
-    button1.classList.add("blue");
-    button2.classList.remove("blue");
-  }
-};
+// function loadFirstSlide() {
+//   if (slide1.classList.contains("slide-center"))
+//   return;
+//   else if (slide2.classList.contains("slide-left")) {
+//     slide3.classList.replace("slide-center", "slide-right");
+//     slide2.classList.replace("slide-left", "slide-center");
+//     button2.classList.add("blue");
+//     button3.classList.remove("blue");
+//     setTimeout(() => {
+//       slide2.classList.replace("slide-center", "slide-right");
+//       slide1.classList.replace("slide-left", "slide-center");
+//       button1.classList.add("blue");
+//       button2.classList.remove("blue");
+//     }, 500);
+//   }
+//   else {
+//     slide2.classList.replace("slide-center", "slide-right");
+//     slide1.classList.replace("slide-left", "slide-center");
+//     button1.classList.add("blue");
+//     button2.classList.remove("blue");
+//   }
+// };
 
 
-function loadSecondSlide() {
-  if (slide2.classList.contains("slide-center"))
-  return;
-  else if (slide2.classList.contains("slide-left")) {
-    slide3.classList.replace("slide-center", "slide-right");
-    slide2.classList.replace("slide-left", "slide-center");
-    button2.classList.add("blue");
-    button3.classList.remove("blue");
-  }
-  else {
-    slide1.classList.replace("slide-center", "slide-left");
-    slide2.classList.replace("slide-left", "slide-center");
-    button1.classList.remove("blue");
-    button2.classList.add("blue");
-  }
-};
+// function loadSecondSlide() {
+//   if (slide2.classList.contains("slide-center"))
+//   return;
+//   else if (slide2.classList.contains("slide-left")) {
+//     slide3.classList.replace("slide-center", "slide-right");
+//     slide2.classList.replace("slide-left", "slide-center");
+//     button2.classList.add("blue");
+//     button3.classList.remove("blue");
+//   }
+//   else {
+//     slide1.classList.replace("slide-center", "slide-left");
+//     slide2.classList.replace("slide-left", "slide-center");
+//     button1.classList.remove("blue");
+//     button2.classList.add("blue");
+//   }
+// };
 
-function loadThirdSlide() {
-  if (slide3.classList.contains("slide-center"))
-  return;
-  else if (slide2.classList.contains("slide-right")) {
-    slide1.classList.replace("slide-center", "slide-left");
-    slide2.classList.replace("slide-right", "slide-center");
-    button2.classList.add("blue");
-    button1.classList.remove("blue");
-    setTimeout(() => {
-      slide2.classList.replace("slide-center", "slide-left");
-      slide3.classList.replace("slide-right", "slide-center");
-      button3.classList.add("blue");
-      button2.classList.remove("blue");
-    }, 500);
-  }
-  else {
-    slide2.classList.replace("slide-center", "slide-left");
-      slide3.classList.replace("slide-right", "slide-center");
-      button3.classList.add("blue");
-      button2.classList.remove("blue");
-  }
-};
+// function loadThirdSlide() {
+//   if (slide3.classList.contains("slide-center"))
+//   return;
+//   else if (slide2.classList.contains("slide-right")) {
+//     slide1.classList.replace("slide-center", "slide-left");
+//     slide2.classList.replace("slide-right", "slide-center");
+//     button2.classList.add("blue");
+//     button1.classList.remove("blue");
+//     setTimeout(() => {
+//       slide2.classList.replace("slide-center", "slide-left");
+//       slide3.classList.replace("slide-right", "slide-center");
+//       button3.classList.add("blue");
+//       button2.classList.remove("blue");
+//     }, 500);
+//   }
+//   else {
+//     slide2.classList.replace("slide-center", "slide-left");
+//       slide3.classList.replace("slide-right", "slide-center");
+//       button3.classList.add("blue");
+//       button2.classList.remove("blue");
+//   }
+// };
 
 
