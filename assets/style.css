@@ -546,6 +546,7 @@ b {
   grid-template-columns: 48% 48%;
   grid-gap: 1rem;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .button.survey__checked {
@@ -660,10 +661,11 @@ select>option {
   top: -630px;
   width: 90%;
   height: auto;
-  padding-inline: 40px;
+  margin-inline: auto;
+  padding-inline: 20px;
   padding-top: 40px;
   display: none;
-  width: 50ch;
+  max-width: 50ch;
 }
 
 .coc-modal>p,
