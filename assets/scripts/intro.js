@@ -58,47 +58,38 @@ function loadFirstSlide() {
   slideCheck = slide.style.right;
   if (slideCheck === "0vw")
   return;
-  else if (slideCheck === "207vw") {
-      slideGroup.forEach(e => e.style.right = "0vw");
-      button3.classList.remove("blue");
-      button1.classList.add("blue");
-  }
-  else {
+  else if (slideCheck === "207vw") 
     slideGroup.forEach(e => e.style.right = "0vw");
-      button2.classList.remove("blue");
-      button1.classList.add("blue");
-  };
+  else 
+    slideGroup.forEach(e => e.style.right = "0vw");
+  button1.classList.add("blue");
+  button2.classList.remove("blue");
+  button3.classList.remove("blue");
 }
 
 function loadSecondSlide() {
   slideCheck = slide.style.right;
   if (slideCheck === "102vw")
   return;
-  else if (slideCheck === "207vw") {
+  else if (slideCheck === "207vw") 
     slideGroup.forEach(e => e.style.right = "min(720px, 102vw)");
-    button3.classList.remove("blue");
-    button2.classList.add("blue");
-  }
-  else {
+  else 
     slideGroup.forEach(e => e.style.right = "min(720px, 102vw)");
-      button1.classList.remove("blue");
-      button2.classList.add("blue");
-  };
+  button1.classList.remove("blue");
+  button2.classList.add("blue");
+  button3.classList.remove("blue");
 }
 
 function loadThirdSlide() {
   slideCheck = slide.style.right;
   if (slideCheck === "207vw")
   return;
-  else if (slideCheck === "0vw") {
+  else if (slideCheck === "0vw") 
     slideGroup.forEach(e => e.style.right = "min(1380px, 207vw)");
-      button1.classList.remove("blue");
-      button3.classList.add("blue");
-  }
-  else {
+  else 
     slideGroup.forEach(e => e.style.right = "min(1380px, 207vw)");
-      button2.classList.remove("blue");
-      button3.classList.add("blue");
-  };
+  button1.classList.remove("blue");
+  button2.classList.remove("blue");
+  button3.classList.add("blue");
 }
 
