@@ -302,6 +302,25 @@ main:not(.dashboard)>*:last-child {
   font-weight: bold;
 }
 
+.row-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  width: 80%;
+}
+
+.row-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-element>* {
+  margin-bottom: 0;
+}
+
 
 
 /* ------  Images --------- */
@@ -322,10 +341,6 @@ main:not(.dashboard)>*:last-child {
 
 /* ---------  Text ------------ */
 
-.glorify {
-  font-family: "glorify", "Lora", Georgia, 'Times New Roman', Times, serif
-}
-
 h1 {
   font-size: 1.75rem;
   font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
@@ -341,6 +356,14 @@ h2 {
 
 h3 {
   font-weight: 600;
+}
+
+.lora {
+  font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+}
+
+.glorify {
+  font-family: "glorify", "Lora", Georgia, 'Times New Roman', Times, serif
 }
 
 small {
