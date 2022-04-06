@@ -425,6 +425,7 @@ b {
   padding-block: 2rem;
   margin-inline: 0;
   height: 484px;
+  position: relative;
 }
 
 .slide>* {
