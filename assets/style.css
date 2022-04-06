@@ -428,12 +428,12 @@ b {
   padding-block: 2rem;
   margin-inline: 0;
   height: 484px;
-  position: relative;
+  position: absolute;
   transition: 1s;
 }
 
 .slide-right {
-  right: 1000px;
+  right: -1000px;
   transition: 1s;
 }
 
@@ -443,7 +443,7 @@ b {
 }
 
 .slide-left {
-  left: 1000px;
+  left: -1000px;
   transition: 1s;
 }
 
@@ -494,6 +494,10 @@ b {
 
 .slide-button.blue {
   background-color: var(--dark-blue);
+}
+
+.getdown {
+  margin-top: 36rem;
 }
 
 
