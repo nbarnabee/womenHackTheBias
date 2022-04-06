@@ -423,9 +423,10 @@ b {
 .slide-container {
   display: flex;
   gap: 50px;
-  overflow: auto;
   transition: 2s;
-  scrollbar-width: none;
+  overflow-x: hidden;
+  /* could reenable this if/when I try to make grab-scrolling work*/
+  /* scrollbar-width: none; */
 }
 
 .slide-container::-webkit-scrollbar {
@@ -440,6 +441,9 @@ b {
   max-height: 484px;
   max-width: 100%;
   flex: 0 0 auto;
+  position: relative;
+  right: 1vw;
+  transition: 1s;
 }
 
 
@@ -660,7 +664,6 @@ select>option {
 .coc-agree {
   width: 60%;
   margin-top: 1.75rem;
-  overflow: scroll;
   margin-bottom: 2rem;
 }
 
