@@ -419,17 +419,21 @@ b {
 
 /*-----------  Slides ----------------- */
 
-.html {
-  overflow-y: scroll;
+
+.slide-container {
+  display: flex;
+  gap: 50px;
+  overflow: auto;
+  transition: 2s;
 }
 
 .slide {
   margin-top: 3.75rem;
   padding-block: 2rem;
   margin-inline: 0;
-  height: 484px;
-  transition: 1s;
-  display: inline-block;
+  max-height: 484px;
+  max-width: 100%;
+  flex: 0 0 auto;
 }
 
 
@@ -482,9 +486,10 @@ b {
   background-color: var(--dark-blue);
 }
 
+/* 
 .getdown {
   margin-top: 36rem;
-}
+} */
 
 
 /* -------- Pre-dash and login components ---------- */

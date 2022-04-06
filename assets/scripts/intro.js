@@ -30,6 +30,9 @@ window.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         underlay.classList.add("active")
         overlay.style.top = "-1400px";
+        setTimeout(() => {
+          overlay.style.opacity="0";
+        }, 200);
       }, 2600);
     }, 500)
 
@@ -43,9 +46,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-// button1.addEventListener("click", loadFirstSlide);
-// button2.addEventListener("click", loadSecondSlide);
-// button3.addEventListener("click", loadThirdSlide);
+button1.addEventListener("click", loadFirstSlide);
+button2.addEventListener("click", loadSecondSlide);
+button3.addEventListener("click", loadThirdSlide);
 
 // function loadFirstSlide() {
 //   if (slide1.classList.contains("slide-center"))
