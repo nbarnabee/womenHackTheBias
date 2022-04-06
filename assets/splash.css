@@ -1,4 +1,4 @@
-overlay {
+.overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -7,4 +7,21 @@ overlay {
   height: 100%;
   background-color: var(--almond);
   z-index: 2;
+  opacity: 1;
+  transition: 1s;
+}
+
+.overlay>* {
+  transform: translateY(100px);
+}
+
+
+
+.underlay {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
