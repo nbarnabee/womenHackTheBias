@@ -218,6 +218,7 @@ hsl(209, 39%, 26%)
   --lgt-green: #B0D97D;
   --lighter-green: #D7E7B6;
   --lgt-blue: #BACBF6;
+  --baby-b: #DDEFF3;
   --purple: #D1BAE8;
   --gray: #B5BDC5;
   --pink: pink;
@@ -843,6 +844,10 @@ for details
 }
 
 /* ----- Colors ---------- */
+
+.baby {
+  background-color: var(--baby-b);
+}
 
 .blue {
   background-color: var(--lgt-blue);
