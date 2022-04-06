@@ -425,14 +425,7 @@ b {
   gap: 50px;
   transition: 2s;
   overflow-x: hidden;
-  /* could reenable this if/when I try to make grab-scrolling work*/
-  /* scrollbar-width: none; */
 }
-
-.slide-container::-webkit-scrollbar {
-  display: none;
-}
-
 
 .slide {
   margin-top: 3.75rem;
