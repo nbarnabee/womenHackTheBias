@@ -27,8 +27,10 @@
 
 
   <main class="dashboard">
-    <form class="form form-dash">
+    <form class="form form-dash no-widget">
       <textarea name="title" placeholder="Post Title" rows="4"></textarea>
+
+      <!-- The select to be replaced -->
       <select name="topic">
         <option value="" selected hidden disabled class="default-option">Topic</option>
         <option value="time">Time Management</option>
@@ -36,14 +38,48 @@
         <option value="careerChange">Career Transitions</option>
         <option value="selfLove">Self-love</option>
       </select>
+
+      <!-- The replacement -->
+
+      <div class="select" role="listbox">
+        <span class="value">Topic</span>
+        <ul class="optList hidden" role="presentation">
+          <li class="option" role="option" aria-selected="true">Topic</li>
+          <li class="option" role="option">Time Management</li>
+          <li class="option" role="option">Dating & Relationships</li>
+          <li class="option" role="option">Career Transitions</li>
+          <li class="option" role="option">Self-love</li>
+        </ul>
+      </div>
+
+      <!-- end replacement -->
+
       <input type="text" name="tags" placeholder="Add tags">
       <textarea name="bodyText" placeholder="What's on your mind?" rows="12"></textarea>
+
+
+      <!-- The select to be replaced -->
       <select name="privacy">
         <option value="" selected hidden disabled class="default-option">Privacy</option>
         <option value="everyone">Open to Everyone</option>
         <option value="groups">Open to My Groups</option>
         <option value="friends">Open to Friends</option>
       </select>
+
+      <!-- the replacement -->
+
+      <div class="select" role="listbox">
+        <span class="value">Privacy</span>
+        <ul class="optList hidden" role="presentation">
+          <li class="option" role="option" aria-selected="true">Privacy</li>
+          <li class="option" role="option">Open to Everyone</li>
+          <li class="option" role="option">Open to My Groups</li>
+          <li class="option" role="option">Open to Friends</li>
+        </ul>
+      </div>
+
+      <!-- end replacement -->
+
       <div class="link-group">
         <button type="button" class="button btn-small">Post</button>
         <button type="reset" class="text-button">Cancel</button>
@@ -70,6 +106,7 @@
 
 
   <script src="./assets/scripts/main.js"></script>
+  <script src="./assets/scripts/select.js"></script>
 </body>
 
 </html>
