@@ -1,3 +1,5 @@
+/* --------  INTRO TRANSITION ---------------  */
+
 // For the intro effect, see https://www.youtube.com/watch?v=2ak37WrbSDg
 
 const overlay = document.querySelector(".overlay");
