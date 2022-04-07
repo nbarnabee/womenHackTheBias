@@ -259,7 +259,7 @@ h1 {
   font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
   font-weight: 500;
   margin-bottom: 1.5rem;
-  padding-inline: 15px;
+  /* padding-inline: 7px; */
   line-height: 2rem;
 }
 
@@ -290,7 +290,7 @@ b {
 
 .left {
   text-align: left;
-  padding-left: 1.5rem;
+  padding-left: 0.5rem;
 }
 
 .txt-light {
@@ -542,6 +542,10 @@ main:not(.dashboard)>*:last-child {
   margin-bottom: 2.25rem;
 }
 
+.pre-dash.ready {
+  margin-top: 12rem;
+}
+
 
 /* -------- Onboarding survey ---------- */
 
@@ -761,6 +765,7 @@ for details
 /* ------  Slide-related styles ---- */
 
 .overlay {
+  margin-top: min(300px, 70%);
   background-color: var(--almond);
   z-index: 2;
   opacity: 1;

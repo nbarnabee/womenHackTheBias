@@ -41,6 +41,26 @@ const professionalSurveyList = `
   <li class="button survey two-line">Conflict<br>Management</li>
 </ul>`
 
+const combinedLists = `<ul class="survey-container-grid">
+<li class="button survey two-line">Time<br> Management</li>
+<li class="button survey">Mental Health</li>
+<li class="button survey two-line">Dating &<br> Relationships</li>
+<li class="button survey">Body Image</li>
+<li class="button survey">Family</li>
+<li class="button survey">Friends</li>
+<li class="button survey">School</li>
+<li class="button survey">Finance</li>
+<li class="button survey">Parenting</li>
+<li class="button survey">Career Transition</li>
+<li class="button survey two-line">Salary<br> Negotiation</li>
+<li class="button survey">Work/Life Balance</li>
+<li class="button survey two-line">Moving Up the<br> Ladder</li>
+<li class="button survey">Work From Home</li>
+<li class="button survey">Soft Skills</li>
+<li class="button survey two-line">Conflict<br>Management</li>
+</ul>
+`
+
 
 
 function createListeners() {
@@ -86,8 +106,8 @@ function updateBoth() {
   setTimeout(() => {
     baseSurvey.style.display="none";
     headerTxt.innerText = `Which area(s) of your personal or professional life would you want to improve on the most?`;
-    personalOptions.innerHTML = personalSurveyList;
-    professionalOptions.innerHTML = professionalSurveyList;
+    personalOptions.innerHTML = combinedLists;
+    // professionalOptions.innerHTML = professionalSurveyList;
     buttonSwap.innerHTML = `<a href="./onboardSurvey4.html" class="button btn-small">Continue</a>`;
     pTxt.innerHTML = `Choose up to three.<br>You can edit them later.`;
     createListeners();
