@@ -317,7 +317,7 @@ main:not(.dashboard)>*:last-child {
 }
 
 .stack>*+* {
-  margin-block-start: 2.25rem;
+  margin-block-start: 2rem;
 }
 
 .stack-small>*+* {

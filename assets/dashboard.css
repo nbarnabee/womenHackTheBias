@@ -43,10 +43,12 @@ main.dashboard>section:last-child {
 
 .textbox {
   border: 1px solid var(--dark-blue);
-  padding: 17px 20px;
+  padding-inline: 20px;
+  padding-block: 17px;
   border-radius: 29px;
   text-align: left;
-  text-overflow: ellipsis;
+  overflow-y: hidden;
+  max-height: 200px;
 }
 
 .notification {
@@ -139,14 +141,6 @@ main.dashboard>section:last-child {
   align-content: space-around;
 }
 
-.cluster {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 
 /* -------- Cards and group-specific card styles ------ */
 
@@ -169,21 +163,6 @@ main.dashboard>section:last-child {
   flex: 1 0 35%;
   align-items: flex-end;
   text-align: left;
-}
-
-
-.cluster>.card-small {
-  height: 60px;
-  justify-content: center;
-}
-
-.cluster>.card-post {
-  max-height: 150px;
-  width: auto;
-  justify-content: flex-start;
-  text-align: left;
-  flex-basis: 45%;
-  flex-grow: 1;
 }
 
 
@@ -251,6 +230,16 @@ main.dashboard>section:last-child {
 .pencil.pencil-profile {
   top: 20%;
   right: -70%;
+}
+
+.go-back {
+  background: url("./icons/left-arrow.svg") center no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 105px;
+  left: 18px;
+  height: 14px;
+  width: 16px;
 }
 
 
