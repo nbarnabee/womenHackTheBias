@@ -229,7 +229,6 @@ html {
   background-color: var(--almond);
   color: var(--dark-blue);
   text-align: center;
-  font-size: 14px;
 }
 
 @font-face {
@@ -253,6 +252,10 @@ html {
 }
 
 /* ---------  Text ------------ */
+
+body * {
+  font-size: 14px;
+}
 
 h1 {
   font-size: 24px;
