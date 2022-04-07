@@ -237,19 +237,20 @@ main.dashboard>section:last-child {
 
 .pencil {
   background: url("./icons/pencil_icon.svg") center no-repeat;
+  background-size: 100%;
   position: absolute;
-  height: 1.17rem;
-  width: 1.17rem;
+  height: 18px;
+  width: 18px;
 }
 
 .pencil.pencil-dash {
   right: -35px;
-  top: 9px;
+  top: 6px;
 }
 
 .pencil.pencil-profile {
-  top: 23%;
-  right: -15%;
+  top: 20%;
+  right: -70%;
 }
 
 
