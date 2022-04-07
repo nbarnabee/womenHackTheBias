@@ -69,9 +69,15 @@ main.dashboard>section:last-child {
   z-index: 1;
   padding-inline: 15px;
   padding-top: 3rem;
+  padding-bottom: 1.5rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: var(--almond);
+}
+
+.top-nav>h1 {
+  margin-bottom: 0;
 }
 
 .bottom-nav {
@@ -189,24 +195,6 @@ main.dashboard>section:last-child {
   gap: 20px;
 }
 
-.topic-group>.button {
-  border: 0;
-}
-
-.pencil-absolute {
-  background: url("./icons/pencil_icon.svg") center no-repeat;
-  position: absolute;
-  top: 15%;
-  right: -25%;
-  height: 1.15rem;
-  width: 1.17rem;
-}
-
-.pencil-absolute.profile {
-  top: 20%;
-  right: -55%;
-}
-
 .topic-text {
   color: var(--dark-blue);
 }
@@ -240,6 +228,28 @@ main.dashboard>section:last-child {
 .profile-pic {
   height: 200px;
   width: 200px;
+  margin-bottom: 10px;
+}
+
+
+/* ---------  Specific elements -----------  */
+
+
+.pencil {
+  background: url("./icons/pencil_icon.svg") center no-repeat;
+  position: absolute;
+  height: 1.17rem;
+  width: 1.17rem;
+}
+
+.pencil.pencil-dash {
+  right: -35px;
+  top: 9px;
+}
+
+.pencil.pencil-profile {
+  top: 23%;
+  right: -15%;
 }
 
 

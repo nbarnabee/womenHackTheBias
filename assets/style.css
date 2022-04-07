@@ -423,6 +423,7 @@ main:not(.dashboard)>*:last-child {
 .button.survey {
   background-color: var(--white);
   color: var(--dark-blue);
+  font-size: 14px;
 }
 
 .button.two-line {
