@@ -248,10 +248,31 @@ main.dashboard>section:last-child {
 
 @media all and (min-width: 440px) {
 
+  html {
+    background-color: var(--gray);
+  }
+
+  main {
+    background-color: var(--white);
+  }
+
 
   main.dashboard {
-    width: 90%;
     margin-inline: auto;
+    padding-block: 5rem;
+    margin-top: 4rem;
+    padding-bottom: 35rem;
+  }
+
+  main.dashboard>:not(.button) {
+    max-width: 800px;
+  }
+
+
+  .top-nav,
+  .bottom-nav {
+    left: 24.7%;
+    right: 24.7%;
   }
 
   .sliding-group {
@@ -260,6 +281,20 @@ main.dashboard>section:last-child {
 
   .sliding-group::-webkit-scrollbar {
     display: visible;
+  }
+
+  .button,
+  .searchbar,
+  .center-group {
+    max-width: 500px !important;
+  }
+
+  .center-group {
+    align-items: center;
+  }
+
+  .single-tag {
+    margin-inline: auto;
   }
 
 }
