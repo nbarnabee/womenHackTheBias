@@ -74,11 +74,12 @@ see https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_build_custom_for
 .select .optList {
   z-index: 2;
   list-style: none;
-  margin-top: 1px;
+  margin-top: -10px;
   background: var(--white);
   border: 2px solid var(--dark-blue);
-  border-top-width: .1em;
-  border-radius: 24px;
+  border-top-width: 0;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
   min-width: 100%;
   max-height: 10em;
   overflow-y: auto;
@@ -88,6 +89,10 @@ see https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_build_custom_for
 .select .option {
   padding: 0.5rem;
   text-align: left;
+}
+
+.select .option:first-of-type {
+  padding-top: 16px;
 }
 
 .select .highlight {
