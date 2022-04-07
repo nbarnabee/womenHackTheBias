@@ -286,7 +286,7 @@ main.dashboard>section:last-child {
   .button,
   .searchbar,
   .center-group {
-    max-width: 500px !important;
+    max-width: 500px;
   }
 
   .center-group {
@@ -295,6 +295,15 @@ main.dashboard>section:last-child {
 
   .single-tag {
     margin-inline: auto;
+  }
+
+  .textbox {
+    width: 500px;
+  }
+
+  .go-back {
+    top: 122px;
+    left: 448px;
   }
 
 }
