@@ -31,13 +31,15 @@ window.addEventListener("DOMContentLoaded", () => {
       logoGroup.forEach((e, i) => {
         setTimeout(() => {
           e.classList.replace("active", "fade");
-        }, 2500);
+        }, 3000);
       });
       setTimeout(() => {
         overlay.style.top = "-1400px";
         overlay.style.opacity="0";
-        underlay.classList.add("active")
-      }, 2600);
+        setTimeout(() => {
+          underlay.classList.add("active")
+        }, 500);
+      }, 3200);
     }, 500)
 
     setTimeout(() => {
