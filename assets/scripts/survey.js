@@ -83,7 +83,7 @@ function updatePersonal() {
     baseSurvey.style.display="none";
     headerTxt.innerText = `Which area(s) of your personal life would you want to improve on the most?`;
     personalOptions.innerHTML = personalSurveyList;
-    buttonSwap.innerHTML = `<a href="./onboardSurvey4.html" class="button btn-small">Continue</a>`;
+    buttonSwap.innerHTML = `<a href="./onboardSurvey3.html" class="button btn-small">Continue</a>`;
     pTxt.innerHTML = `Choose up to three.<br>You can edit them later.`;
     createListeners();
   }, 500);
@@ -95,7 +95,7 @@ function updateProfessional() {
     baseSurvey.style.display="none";
     headerTxt.innerText = `Which area(s) of your professional life would you want to improve on the most?`;
     professionalOptions.innerHTML = professionalSurveyList;
-    buttonSwap.innerHTML = `<a href="./onboardSurvey4.html" class="button btn-small">Continue</a>`;
+    buttonSwap.innerHTML = `<a href="./onboardSurvey3.html" class="button btn-small">Continue</a>`;
     pTxt.innerHTML = `Choose up to three.<br>You can edit them later.`;
     createListeners();
   }, 500);
@@ -108,7 +108,7 @@ function updateBoth() {
     headerTxt.innerText = `Which area(s) of your personal or professional life would you want to improve on the most?`;
     personalOptions.innerHTML = combinedLists;
     // professionalOptions.innerHTML = professionalSurveyList;
-    buttonSwap.innerHTML = `<a href="./onboardSurvey4.html" class="button btn-small">Continue</a>`;
+    buttonSwap.innerHTML = `<a href="./onboardSurvey3.html" class="button btn-small">Continue</a>`;
     pTxt.innerHTML = `Choose up to three.<br>You can edit them later.`;
     createListeners();
   }, 500);
