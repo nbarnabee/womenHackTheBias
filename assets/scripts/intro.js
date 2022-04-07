@@ -37,6 +37,7 @@ window.addEventListener("DOMContentLoaded", () => {
         overlay.style.top = "-1400px";
         overlay.style.opacity="0";
         setTimeout(() => {
+          overlay.style.display="none";
           underlay.classList.add("active")
         }, 500);
       }, 3200);
