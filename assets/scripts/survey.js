@@ -42,16 +42,16 @@ const professionalSurveyList = `
 </ul>`
 
 
-// We make an array from the survey options and apply a new style when they're checked.  This will also apply to the secondary survey items, but we'll have to call it again.
 
 function createListeners() {
-  let buttonSet = document.querySelectorAll(".survey");
-  Array.from(buttonSet).forEach(element => element.addEventListener("click", makeActive));
-
-  function makeActive(click) {
-    click.target.classList.remove("survey");
-  }
+  let buttonSet = document.querySelectorAll('.survey');
+  Array.from(buttonSet).forEach(element => element.addEventListener("click", selected));
 };
+
+
+function selected() {
+this.classList.remove("survey");
+}
 
 
 // Here's where we start the process of updating the page's contents depending on the choices made in the initial survey.
@@ -64,11 +64,9 @@ function updatePersonal() {
     headerTxt.innerText = `Which area(s) of your personal life would you want to improve on the most?`;
     personalOptions.innerHTML = personalSurveyList;
     buttonSwap.innerHTML = `<a href="./onboardSurvey4.html" class="button btn-small">Continue</a>`;
-    pTxt.classList.remove("left");
+    pTxt.innerHTML = `Choose up to three.<br>You can edit them later.`;
+    createListeners();
   }, 500);
-
-  buttonSet = document.querySelectorAll('.survey');
-  createListeners();
 };
 
 function updateProfessional() {
@@ -78,11 +76,9 @@ function updateProfessional() {
     headerTxt.innerText = `Which area(s) of your professional life would you want to improve on the most?`;
     professionalOptions.innerHTML = professionalSurveyList;
     buttonSwap.innerHTML = `<a href="./onboardSurvey4.html" class="button btn-small">Continue</a>`;
-    pTxt.classList.remove("left");
+    pTxt.innerHTML = `Choose up to three.<br>You can edit them later.`;
+    createListeners();
   }, 500);
-
-  buttonSet = document.querySelectorAll('.survey');
-  createListeners();
 };
 
 function updateBoth() {
@@ -93,11 +89,9 @@ function updateBoth() {
     personalOptions.innerHTML = personalSurveyList;
     professionalOptions.innerHTML = professionalSurveyList;
     buttonSwap.innerHTML = `<a href="./onboardSurvey4.html" class="button btn-small">Continue</a>`;
-    pTxt.classList.remove("left");
+    pTxt.innerHTML = `Choose up to three.<br>You can edit them later.`;
+    createListeners();
   }, 500);
-
-  buttonSet = document.querySelectorAll('.survey');
-  createListeners();
 };
 
   // if (both.classList.contains("survey__checked") || (personal.classList.contains("survey__checked") && professional.classList.contains("survey__checked"))) {
