@@ -526,16 +526,16 @@ main:not(.dashboard)>*:last-child {
 
 
 .pre-dash {
-  background: url("./illustrations/onboarding3_noBG.png") center no-repeat;
-  background-size: 90%;
+  background: url("./illustrations/onboarding4_noBG.png") center no-repeat;
+  background-size: 85%;
 }
 
 .pre-dash.high-bg-img {
-  background-position: center 35%;
+  background-position: center 28%;
 }
 
 .pre-dash>h1 {
-  padding-bottom: 20rem;
+  padding-bottom: 18rem;
 }
 
 .pre-dash>form {
@@ -658,7 +658,7 @@ select>option {
 
 
 .intrologo {
-  margin-top: 75%;
+  /* margin-top: 75%; */
   margin-bottom: -10px;
   margin-inline: auto;
 }
