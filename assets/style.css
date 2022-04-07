@@ -329,7 +329,7 @@ main:not(.dashboard)>*:last-child {
 }
 
 .top-space {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 .central {
@@ -677,7 +677,7 @@ select>option {
   top: 0;
   left: 0;
   right: 0;
-  height: auto;
+  height: 100vh;
   overflow-y: auto;
   margin-inline: 0;
   padding-inline: 25px;
