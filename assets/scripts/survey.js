@@ -60,19 +60,19 @@ submit.addEventListener("click", updateSurvey);
 function updateSurvey() {
   baseSurvey.style.display = "none";
   if (both.classList.contains("survey__checked") || (personal.classList.contains("survey__checked") && professional.classList.contains("survey__checked"))) {
-    headerTxt.innerText = `Which areas of your personal or professional life would you want to improve on the most?`;
+    headerTxt.innerText = `Which area(s) of your personal or professional life would you want to improve on the most?`;
     personalOptions.innerHTML = personalSurveyList;
     professionalOptions.innerHTML = professionalSurveyList;
   }
   else if (personal.classList.contains("survey__checked")) {
-    headerTxt.innerText = `Which areas of your personal life would you want to improve on the most?`;
+    headerTxt.innerText = `Which area(s) of your personal life would you want to improve on the most?`;
     personalOptions.innerHTML = personalSurveyList;
   }
   else {
-    headerTxt.innerText = `Which areas of your professional life would you want to improve on the most?`;
+    headerTxt.innerText = `Which area(s) of your professional life would you want to improve on the most?`;
     professionalOptions.innerHTML = professionalSurveyList;
   }
-  pTxt.innerHTML = `Choose your top 3.<br>You can edit them later.`;
+  pTxt.innerHTML = `Choose up to three.<br>You can edit them later.`;
   buttonSwap.innerHTML = `<a href="./onboardSurvey4.html" class="button btn-small">Continue</a>`;
   pTxt.classList.remove("left");
   buttonSet = document.querySelectorAll('.survey');
