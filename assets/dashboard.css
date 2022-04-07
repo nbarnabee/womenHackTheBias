@@ -283,12 +283,6 @@ main.dashboard>section:last-child {
     display: visible;
   }
 
-  .button,
-  .searchbar,
-  .center-group {
-    max-width: 500px;
-  }
-
   .center-group {
     align-items: center;
   }

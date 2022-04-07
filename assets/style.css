@@ -857,6 +857,38 @@ for details
     margin-right: 4rem;
   }
 
+  .button,
+  .input,
+  .searchbar,
+  .center-group,
+  .form>.input-long,
+  p,
+  textarea {
+    max-width: 500px;
+  }
+
+  p {
+    margin-inline: auto;
+  }
+
+  .form>input {
+    flex-basis: 65%;
+  }
+
+  .pre-dash {
+    background-size: 55%;
+  }
+
+  .pre-dash>h1 {
+    padding-bottom: 22rem;
+  }
+
+  .coc-modal {
+    top: 82px;
+    left: 605px;
+  }
+
+
 }
 
 /* ----- Colors ---------- */
