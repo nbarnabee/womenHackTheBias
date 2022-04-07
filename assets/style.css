@@ -673,15 +673,20 @@ select>option {
 .coc-modal {
   background-color: var(--white);
   z-index: 1;
-  position: relative;
-  top: -630px;
-  width: 90%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: auto;
-  margin-inline: auto;
-  padding-inline: 20px;
+  overflow-y: auto;
+  margin-inline: 0;
+  padding-inline: 25px;
   padding-top: 40px;
   display: none;
-  max-width: 50ch;
+}
+
+.coc-modal>ul {
+  padding-inline: 30px;
 }
 
 .coc-modal>p,
