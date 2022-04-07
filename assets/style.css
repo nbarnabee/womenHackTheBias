@@ -421,7 +421,6 @@ main:not(.dashboard)>*:last-child {
 .button.survey {
   background-color: var(--white);
   color: var(--dark-blue);
-  font-size: 14px;
 }
 
 .button.two-line {
@@ -561,9 +560,9 @@ main:not(.dashboard)>*:last-child {
   margin-top: 2rem;
 }
 
-.button.survey__checked {
-  background-color: var(--dark-blue);
-  color: var(--white);
+
+.base-survey {
+  display: block;
 }
 
 
